@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+  	<link rel="stylesheet" href="./contact.css" />
+  	<link rel="stylesheet" href="./language-switcher.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
+
+  	<title>Contact Us - Koda</title>
+</head>
+<body>
+  	<div class="contact-page">
+    		<!-- Contact Hero Section -->
+    		<section class="contact-hero">
+      			<div class="decorative-background">
+        				<div class="circle-small-left"></div>
+        				<div class="circle-large"></div>
+        				<div class="line horizontal-1"></div>
+        				<div class="line horizontal-2"></div>
+        				<div class="line horizontal-3"></div>
+        				<div class="line vertical-1"></div>
+        				<div class="line vertical-2"></div>
+      			</div>
+
+      			<!-- Navigation -->
+      			<header>
+        				<nav class="main-nav">
+          					<div class="logo">
+            						<a href="index.html">
+              							<img class="content-icon" alt="Koda Logo" src="assets/images/logo copy.svg">
+            						</a>
+          					</div>
+          					<div class="nav-links">
+            						<a href="about.html" data-i18n-key="nav.about">About Koda</a>
+            						<a href="contact.html" class="active" data-i18n-key="nav.contact">Contact</a>
+            						<div class="language-switcher">
+              							<button id="language-toggle" aria-haspopup="true" aria-expanded="false">
+                								<span id="current-language">🇬🇧 EN</span> ▼
+              							</button>
+              							<ul id="language-menu" class="hidden">
+                								<li><a href="#" data-lang="en">🇬🇧 EN</a></li>
+                								<li><a href="#" data-lang="pt">🇧🇷 PT</a></li>
+                								<li><a href="#" data-lang="es">🇪🇸 ES</a></li>
+              							</ul>
+            						</div>
+            						<a href="https://getkoda.app/" class="demo-button" data-i18n-key="nav.get_started">Get Started</a>
+          					</div>
+        				</nav>
+      			</header>
+
+      			<!-- Contact Header -->
+      			<div class="contact-header">
+        				<h1 data-i18n-key="contact.title">Contact Us</h1>
+        				<p data-i18n-key="contact.description">Feel free to contact us and we will reach back to you as soon as possible.</p>
+      			</div>
+
+      			<!-- Contact Form and Image -->
+      			<div class="contact-content">
+        				<!-- Form -->
+        				<form class="contact-form">
+          					<!-- Name Field -->
+          					<div class="form-field">
+            						<label for="name" data-i18n-key="form.name">Name</label>
+            						<input type="text" id="name" placeholder="Enter your name" data-i18n-key="form.name_placeholder" required>
+          					</div>
+
+          					<!-- Email Field -->
+          					<div class="form-field">
+            						<label for="email" data-i18n-key="form.email">Email</label>
+            						<input type="email" id="email" placeholder="Enter your email" data-i18n-key="form.email_placeholder" required>
+          					</div>
+
+          					<!-- Message Field -->
+          					<div class="form-field">
+            						<label for="message" data-i18n-key="contact.message">Message</label>
+            						<textarea id="message" placeholder="Add Message" data-i18n-key="contact.message_placeholder" required></textarea>
+          					</div>
+
+          					<!-- Submit Button -->
+          					<button type="submit" class="submit-button" data-i18n-key="contact.submit">Contact Us</button>
+        				</form>
+
+        				<!-- Right Side Image -->
+        				<div class="contact-image-container">
+          					<img src="assets/images/Untitled design copy 2.svg" alt="Privacy and Security Icons" class="fading-image">
+        				</div>
+      			</div>
+    		</section>
+
+    		<!-- Footer -->
+    		<footer class="site-footer">
+      			<div class="footer-main">
+        				<!-- Left Side: Logo and Newsletter -->
+        				<div class="footer-left">
+          					<img src="assets/images/logo copy.svg" alt="Koda Logo" class="footer-logo">
+          					<form class="newsletter-form">
+            						<input type="email" placeholder="Your email address" data-i18n-key="footer.newsletter_placeholder">
+            						<button type="submit" class="newsletter-submit">
+              							<span data-i18n-key="footer.newsletter_button">Subscribe to our newsletter</span>
+              							<div class="arrow-circle">
+                								<img src="assets/icons/send-icon.svg" alt="Submit">
+              							</div>
+            						</button>
+          					</form>
+          					<div class="footer-copyright">
+            						<span data-i18n-key="footer.copyright">© 2025 Koda. All rights reserved.</span>
+          					</div>
+        				</div>
+
+        				<!-- Right Side: Navigation Links -->
+        				<div class="footer-nav">
+          					<div class="nav-column">
+            						<h4 data-i18n-key="footer.company">Company</h4>
+            						<a href="about.html"><span data-i18n-key="nav.about">About Koda</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+            						<a href="contact.html"><span data-i18n-key="nav.contact">Contact</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+          					</div>
+          					<div class="nav-column">
+            						<h4 data-i18n-key="footer.policy">Policy</h4>
+            						<a href="terms.html"><span data-i18n-key="footer.terms">Our Terms of Use</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+            						<a href="privacy.html"><span data-i18n-key="footer.privacy">Privacy Policy</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+          					</div>
+        				</div>
+      			</div>
+
+      			<!-- Back to Top -->
+      			<a href="#top" class="back-to-top">
+        				<span data-i18n-key="footer.back_to_top">Back to Top</span>
+        				<img src="assets/icons/chevron-up.svg" alt="^">
+      			</a>
+    		</footer>
+  	</div>
+  	<script src="language-switcher.js"></script>
+</body>
+</html>

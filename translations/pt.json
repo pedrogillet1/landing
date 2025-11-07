@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "about": "Sobre Koda",
+    "contact": "Contato",
+    "get_started": "Começar"
+  },
+  "hero": {
+    "title": "Do Caos à Clareza em Seus Documentos",
+    "subtitle": "O assistente de documentos com IA que ajuda você a organizar, pesquisar e entender seus arquivos"
+  },
+  "workflow": {
+    "title": "Flexível",
+    "subtitle": "Para Cada Fluxo de Trabalho Profissional",
+    "business": {
+      "title": "Para Negócios",
+      "description": "Controle contratos, auditorias e relatórios—organizados e criptografados."
+    },
+    "academics": {
+      "title": "Para Acadêmicos",
+      "description": "Encontre pesquisas, notas e citações em segundos—seguro e estruturado."
+    },
+    "professionals": {
+      "title": "Para Profissionais",
+      "description": "De advogados a jornalistas—gerencie documentos críticos sem caos."
+    },
+    "cta": "Experimentar Koda"
+  },
+  "chaos": {
+    "title_highlight": "Você Está Perdendo 2 Dias Completos",
+    "title": "Todo Mês",
+    "subtitle": "Procurar documentos consome 7,5 horas mensais—isso é quase 20% da sua semana de trabalho. Tempo que você nunca vai recuperar.",
+    "text_left": "Cada minuto procurando arquivos, cada momento de pânico quando você não consegue encontrar um—tudo se acumula. Você merece coisa melhor.",
+    "text_right": "Koda acaba com o caos. Carregue uma vez, encontre instantaneamente, permaneça seguro sempre."
+  },
+  "how_it_works": {
+    "title_highlight": "Como",
+    "title": "Funciona?",
+    "intro": "Koda combina armazenamento criptografado com assistência de IA em uma experiência perfeita. Carregue seus arquivos, faça perguntas naturais e obtenha respostas instantâneas e privadas—sem escavar, sem compartilhar, sem comprometer.",
+    "upload": {
+      "title": "Carregue Seus Arquivos",
+      "description": "Armazene com segurança documentos, PDFs, notas, fotos — qualquer coisa que você queira manter privada e acessível. Todos os arquivos são criptografados de ponta a ponta."
+    },
+    "ask": {
+      "title": "Pergunte Qualquer Coisa ao Koda",
+      "description": "Use linguagem natural para fazer perguntas sobre seus documentos. \"Qual é o status do meu reembolso de impostos?\", \"Resuma meu contrato de locação.\""
+    },
+    "answers": {
+      "title": "Obtenha Respostas Instantâneas e Privadas",
+      "description": "A IA do Koda responde instantaneamente usando apenas seu conteúdo carregado — nunca conectado a dados ou modelos externos."
+    },
+    "organize": {
+      "title": "Fique Organizado, Sem Esforço",
+      "description": "Pesquise, marque, agrupe e gerencie seus documentos por voz ou texto. Koda ajuda você a ficar por dentro de tudo sem mexer em pastas."
+    }
+  },
+  "features": {
+    "title_highlight": "Inteligente. Seguro. Surpreendentemente",
+    "title": "Simples.",
+    "intro": "Koda ajuda você a organizar sua vida digital sem atrito. Do armazenamento criptografado ao Q&A de IA, tudo é projetado para usuários que priorizam privacidade, mas ainda querem conveniência moderna.",
+    "encryption": {
+      "title": "Criptografia de Ponta a Ponta",
+      "description": "Seus documentos são criptografados antes de sair do seu dispositivo. Apenas você tem as chaves."
+    },
+    "ai": {
+      "title": "Busca e Q&A com IA",
+      "description": "Faça perguntas, obtenha resumos, extraia dados — tudo baseado apenas em seus arquivos."
+    },
+    "organization": {
+      "title": "Organização Inteligente de Documentos",
+      "description": "Organize e marque automaticamente seus documentos para recuperação sem esforço."
+    },
+    "offline": {
+      "title": "Acesso Offline e Sincronização",
+      "description": "Acesse seus arquivos em qualquer lugar, a qualquer hora. Sincronização perfeita quando você estiver online novamente."
+    }
+  },
+  "form": {
+    "title_highlight": "Cadastro",
+    "title": "Formulário",
+    "description": "Preencha o formulário abaixo para obter acesso antecipado.",
+    "name": "Nome",
+    "email": "E-mail",
+    "occupation": "Ocupação/Indústria",
+    "name_placeholder": "Digite seu nome",
+    "email_placeholder": "Digite seu e-mail",
+    "occupation_placeholder": "Digite sua ocupação/indústria",
+    "submit": "Solicitar uma Demonstração"
+  },
+  "cta": {
+    "your_prefix": "Seus ",
+    "title_files": "Arquivos",
+    "period_your": ". Seus ",
+    "title_ai": "IA",
+    "title_rules": "Regras",
+    "description": "Koda dá a você controle total sobre seus documentos com IA privada e armazenamento criptografado — tudo no seu telefone."
+  },
+  "footer": {
+    "newsletter_placeholder": "Seu endereço de e-mail",
+    "newsletter_button": "Inscrever-se em nossa newsletter",
+    "copyright": "© 2025 Koda. Todos os direitos reservados.",
+    "company": "Empresa",
+    "policy": "Política",
+    "terms": "Nossos Termos de Uso",
+    "privacy": "Política de Privacidade",
+    "back_to_top": "Voltar ao Topo"
+  },
+  "about": {
+    "hero_line1": "SOBRE",
+    "hero_line2": "KODA",
+    "since_tag": "DESDE 2025",
+    "since_message_part1": "Cada documento é ",
+    "since_message_part2": "totalmente criptografado",
+    "since_message_part3": ", e nossa ",
+    "since_message_part4": "abordagem de conhecimento zero",
+    "since_message_part5": " significa que somente ",
+    "since_message_part6": "você controla",
+    "since_message_part7": " seus dados.",
+    "mission_title": "Nossa Missão",
+    "mission_description": "Capacitar indivíduos e famílias com um assistente de documentos com IA que prioriza a privacidade e transforma o gerenciamento diário de arquivos em uma experiência perfeita, segura e sem estresse.",
+    "vision_title": "Nossa Visão",
+    "vision_description": "Um mundo onde todos tenham controle total sobre suas informações pessoais, sem depender de ferramentas empresariais complexas ou sacrificar a privacidade pela conveniência.",
+    "values_title": "Nossos Valores",
+    "values_description": "Capacitar indivíduos e famílias com um assistente de documentos com IA que prioriza a privacidade e transforma o gerenciamento diário de arquivos em uma experiência perfeita, segura e sem estresse.",
+    "why_prefix": "Por que ",
+    "why_koda": "KODA?",
+    "why_description": "Gerenciar documentos não deveria parecer um trabalho em tempo integral. A maioria das ferramentas sacrifica a privacidade, afoga você em complexidade ou não foi projetada pensando em indivíduos. Koda é diferente.",
+    "privacy_first": "Privacidade em Primeiro Lugar",
+    "smart_simple": "Inteligente, Simples e Mobile",
+    "all_in_one": "Organização Tudo-em-Um",
+    "join_now": "Junte-se agora",
+    "join_description": " para atualizações prioritárias e benefícios exclusivos.",
+    "try_now": "Experimente Agora"
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "description": "Fique à vontade para entrar em contato conosco e responderemos o mais breve possível.",
+    "message": "Mensagem",
+    "message_placeholder": "Adicionar Mensagem",
+    "submit": "Entre em Contato"
+  },
+  "waitlist": {
+    "title": "Lista de Espera Koda",
+    "description": "Bem-vindo ao Koda – Seu assistente de documentos com IA<br/>Obrigado pelo seu interesse no Koda! Estamos dando os toques finais em nosso Beta e adoraríamos dar acesso antecipado assim que estiver pronto.<br/>Como membro da lista de espera, você terá acesso antecipado, oportunidades prioritárias de feedback, atualizações exclusivas – e um ano completo de Koda gratuito quando lançarmos.",
+    "submit": "Entrar na Lista de Espera"
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "last_updated": "Última atualização 17 de setembro de 2025",
+    "intro": "Esta Política de Privacidade ajudará você a entender melhor como coletamos, usamos e compartilhamos suas informações pessoais.",
+    "intro_content": "Bem-vindo ao Koda, uma plataforma segura de gerenciamento de documentos e assistente de IA construída em uma arquitetura de conhecimento zero. Sua privacidade é fundamental para nossa missão de fornecer soluções de gerenciamento de documentos seguras e inteligentes. Estamos comprometidos com a transparência sobre nossas práticas de dados e em dar a você controle significativo sobre suas informações pessoais. Esta Política de Privacidade explica quais informações coletamos, por que as coletamos, como as usamos e as escolhas que você tem em relação aos seus dados pessoais.",
+    "toc_title": "Índice",
+    "section1_title": "Quais Informações Coletamos?",
+    "section1_content": "Coletamos informações necessárias para fornecer e melhorar nosso Serviço, mas com uma distinção crucial graças à nossa arquitetura de conhecimento zero: nunca temos acesso ao conteúdo de seus documentos. Todos os seus arquivos e as informações dentro deles são criptografados em seu dispositivo antes de serem enviados para nossos servidores. As chaves de criptografia são derivadas de sua senha e nunca são transmitidas para nós ou armazenadas por nós. Isso significa que somente você pode descriptografar e visualizar seus documentos.<br/><br/>As informações que coletamos são limitadas ao que é essencial para a funcionalidade do serviço:<br/><br/>Informações da Conta: Seu nome, endereço de e-mail e informações de cobrança (para planos pagos).<br/>Metadados de Uso: Informações sobre como você usa o serviço, como o número de documentos que você armazena, tamanhos de arquivo e atividade geral. Esses metadados não incluem nenhuma informação sobre o conteúdo de seus documentos.<br/>Informações Técnicas e de Dispositivo: Informações técnicas padrão, como seu endereço IP, tipo de navegador e sistema operacional, que usamos para segurança e para melhorar nosso serviço.",
+    "section2_title": "Como Usamos Suas Informações?",
+    "section2_content": "Nosso uso de suas informações é estritamente limitado por nossa arquitetura de conhecimento zero. Usamos as informações que coletamos para:<br/><br/>Fornecer e Manter o Serviço: Usamos suas informações de conta para gerenciar sua conta e fornecer acesso à plataforma Koda. Usamos versões criptografadas de seus documentos para fornecer recursos de armazenamento e sincronização.<br/>Alimentar o Assistente de IA: Nosso assistente de IA é projetado para trabalhar com seus dados criptografados sem nunca descriptografá-los em nossos servidores. Todo o processamento de IA acontece em um ambiente seguro e isolado, e não temos acesso ao conteúdo de seus documentos ou aos resultados de suas consultas de IA. Não usamos seus dados para treinar nossos modelos de IA.<br/>Melhorar Nosso Serviço: Usamos metadados de uso anonimizados para entender como nosso serviço é usado e para identificar áreas de melhoria. Esses dados são agregados e não contêm nenhuma informação pessoal.<br/>Comunicação e Suporte: Usamos suas informações de contato para enviar comunicações importantes relacionadas ao serviço e para responder às suas solicitações de suporte. No entanto, não podemos acessar seus documentos para fornecer suporte.",
+    "section3_title": "Usamos Cookies E Outras Tecnologias De Rastreamento?",
+    "section3_content": "Usamos cookies e tecnologias semelhantes para funcionalidades essenciais, como mantê-lo conectado à sua conta. Também podemos usar cookies para fins de análise para nos ajudar a entender como nosso serviço é usado. Você pode controlar o uso de cookies por meio das configurações do navegador.",
+    "section4_title": "Por Quanto Tempo Mantemos Suas Informações?",
+    "section4_content": "Retemos suas informações de conta e metadados de uso enquanto sua conta estiver ativa. Seus documentos criptografados são armazenados em nossos servidores até que você os exclua. Quando você exclui um documento, ele é removido permanente e irrevogavelmente de nossos sistemas.",
+    "section5_title": "Como Mantemos Suas Informações Seguras?",
+    "section5_content": "O Koda é construído em um modelo de segurança de conhecimento zero, que fornece a proteção mais forte possível para seus dados. Aqui está o que isso significa:<br/><br/>Criptografia do Lado do Cliente: Todos os seus documentos são criptografados em seu dispositivo usando criptografia AES-256 de padrão industrial antes de serem transmitidos para nossos servidores. As chaves de criptografia são derivadas de sua senha e nunca são enviadas para nós.<br/>Você Detém a Chave: Você é o único que detém a chave para descriptografar seus documentos. Não temos acesso à sua senha ou suas chaves de criptografia e, portanto, não podemos descriptografar seus dados.<br/>Proteção Contra Violações: No caso improvável de uma violação de dados de nossos servidores, seus documentos permaneceriam seguros, pois estão criptografados e os invasores não teriam as chaves para descriptografá-los.<br/>À Prova de Insiders: Nossa arquitetura de conhecimento zero significa que ninguém no Koda, nem mesmo nossos administradores de sistema, pode acessar seus documentos.",
+    "section6_title": "Quais São Seus Direitos de Privacidade?",
+    "section6_content": "Nossa arquitetura de conhecimento zero oferece a você um nível sem precedentes de controle sobre seus dados. Seus direitos de privacidade incluem:<br/><br/>O Direito ao Esquecimento: Quando você exclui seus dados do Koda, eles desaparecem permanentemente. Não podemos recuperá-los para você, nem podemos fornecê-los a terceiros.<br/>O Direito à Portabilidade de Dados: Você pode baixar seus documentos do Koda a qualquer momento. Como você detém as chaves de criptografia, você está no controle total de seus dados.<br/>O Direito de Acesso: Você pode acessar seus documentos a qualquer momento fazendo login em sua conta Koda. No entanto, observe que não podemos fornecer uma cópia de seus dados porque não podemos descriptografá-los.",
+    "section7_title": "Como você pode entrar em contato conosco sobre esta política?",
+    "section7_content": "Se você tiver alguma dúvida ou preocupação sobre esta Política de Privacidade ou nossas práticas de privacidade, entre em contato conosco em:<br/><br/>support@kodapda.com"
+  },
+  "terms": {
+    "title": "Nossos Termos de Uso",
+    "last_updated": "Última atualização 17 de setembro de 2025",
+    "intro": "Leia Nossos Termos Abaixo Para Saber Mais Sobre Seus Direitos E Responsabilidades Como Usuário Do KODA.",
+    "intro_content": "Bem-vindo ao Koda, uma plataforma segura de gerenciamento de documentos e assistente de IA construída em uma arquitetura de conhecimento zero. Estes Termos de Uso (\"Termos\") regem seu acesso e uso de nossos serviços. Ao usar o Koda, você concorda com estes Termos. Nosso modelo de conhecimento zero significa que não podemos acessar, visualizar ou descriptografar seu conteúdo, dando a você controle e privacidade máximos. Este princípio fundamental molda nossos direitos e responsabilidades mútuos.",
+    "toc_title": "Índice",
+    "section1_title": "1. Introdução",
+    "section1_content": "Estes Termos de Uso constituem um acordo legalmente vinculativo entre você e Camasmie Gillet Inc. (\"Koda,\" \"nós,\" ou \"nos\"). Eles regem o uso da plataforma Koda, incluindo nosso site, aplicativos móveis e todos os serviços relacionados (coletivamente, o \"Serviço\"). Nosso Serviço é construído em uma arquitetura de conhecimento zero, o que significa que não temos acesso ao conteúdo que você armazena conosco. Toda criptografia e descriptografia de seus documentos acontecem em seu dispositivo, garantindo que apenas você possa visualizar seus dados. Ao usar nosso Serviço, você concorda com estes Termos e nossa Política de Privacidade, que detalha nosso compromisso com este modelo de segurança.",
+    "section2_title": "2. Elegibilidade",
+    "section2_content": "Para usar nosso Serviço, você deve ter pelo menos 18 anos de idade e ter capacidade legal para celebrar um contrato vinculativo. Ao criar uma conta, você declara e garante que atende a esses requisitos. Se você estiver usando o Koda em nome de uma organização, você declara que tem autoridade para vincular essa organização a estes Termos. Você é responsável por garantir que o uso do Serviço esteja em conformidade com todas as leis, regras e regulamentos aplicáveis a você. O Serviço não está disponível para usuários previamente removidos do Serviço pelo Koda.",
+    "section3_title": "3. Responsabilidades da Conta",
+    "section3_content": "Você é o único responsável por todas as atividades que ocorrem em sua conta. Devido à nossa arquitetura de conhecimento zero, sua senha é sua chave mestra. Você é o único que pode acessar sua conta. Se você perder sua senha, não podemos recuperá-la para você e você perderá o acesso aos seus dados permanentemente. Esta é uma consequência necessária de nosso compromisso com sua privacidade e segurança. Você concorda em manter sua senha confidencial e em não compartilhá-la com terceiros. Você deve nos notificar imediatamente sobre qualquer uso não autorizado de sua conta.",
+    "section4_title": "4. Uso do Serviço",
+    "section4_content": "O Koda concede a você uma licença limitada, não exclusiva, intransferível e revogável para usar nosso Serviço para seus fins pessoais ou comerciais internos, sujeito a estes Termos. Você é proprietário do seu conteúdo. Não reivindicamos nenhuma propriedade dos documentos ou outro conteúdo que você armazena no Koda. Os recursos de IA do nosso Serviço operam em seus dados criptografados sem nunca descriptografá-los em nossos servidores, garantindo que seu conteúdo permaneça privado. Você é responsável pela legalidade, confiabilidade e adequação de todo o conteúdo que armazena no Koda.",
+    "section5_title": "5. Atividades Proibidas",
+    "section5_content": "Você concorda em não usar indevidamente o Serviço Koda ou ajudar outra pessoa a fazê-lo. Isso inclui abster-se de carregar ou compartilhar qualquer conteúdo ilegal, prejudicial ou que viole os direitos de terceiros. Você não deve tentar contornar quaisquer recursos de segurança do Serviço, nem acessar, adulterar ou usar áreas não públicas do Serviço. Além disso, você concorda em não interferir ou interromper qualquer usuário, host ou rede, ou usar o Serviço para qualquer finalidade diferente do uso pretendido.<br/>Como não podemos ver seu conteúdo, confiamos em você para usar nosso serviço de forma responsável. Reservamo-nos o direito de investigar e tomar medidas apropriadas, incluindo suspensão ou rescisão de conta, em resposta a relatórios de abuso ou atividade ilegal.",
+    "section6_title": "6. Propriedade Intelectual",
+    "section6_content": "Todos os direitos, títulos e interesses no e para o Serviço Koda (excluindo conteúdo do usuário) são e permanecerão propriedade exclusiva do Koda e de seus licenciadores. O Serviço é protegido por direitos autorais, marcas registradas e outras leis dos Estados Unidos e de países estrangeiros. Nada nestes Termos lhe dá o direito de usar o nome Koda ou qualquer uma das marcas registradas, logotipos, nomes de domínio e outros recursos distintos da marca Koda. Agradecemos seus comentários, mas observe que podemos usar seus comentários sem qualquer obrigação para com você.",
+    "section7_title": "7. Rescisão",
+    "section7_content": "Você é livre para parar de usar nosso Serviço a qualquer momento. Também reservamos o direito de suspender ou rescindir seu acesso ao Serviço com aviso prévio se você violar estes Termos ou se o uso do Serviço causar um risco real de dano ou perda para nós ou outros usuários. Após a rescisão, seu direito de usar o Serviço cessará imediatamente. Quando sua conta for encerrada, seus dados criptografados serão excluídos permanentemente de nossos servidores. Devido à nossa arquitetura de conhecimento zero, esses dados não são recuperáveis por nós ou por qualquer outra pessoa uma vez excluídos.",
+    "toc_section1": "Introdução",
+    "toc_section2": "Elegibilidade",
+    "toc_section3": "Responsabilidades da Conta",
+    "toc_section4": "Uso do Serviço",
+    "toc_section5": "Atividades Proibidas",
+    "toc_section6": "Propriedade Intelectual",
+    "toc_section7": "Rescisão"
+  }
+}

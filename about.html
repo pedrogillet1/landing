@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+
+  	<link rel="stylesheet" href="./about.css" />
+  	<link rel="stylesheet" href="./language-switcher.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
+
+  	<title>About Koda</title>
+</head>
+<body>
+  	<div class="about-page">
+    		<!-- Hero Section with Decorative Background and Header -->
+    		<section class="hero-section">
+      			<div class="decorative-circles">
+        				<div class="circle-outer"></div>
+        				<div class="circle-inner"></div>
+        				<div class="line line-h1"></div>
+        				<div class="line line-h2"></div>
+        				<div class="line line-h3"></div>
+        				<div class="line line-v1"></div>
+        				<div class="line line-v2"></div>
+      			</div>
+
+      			<!-- Hero XY Image -->
+      			<img src="assets/images/xy.svg" alt="Koda" class="hero-xy-image">
+
+      			<!-- Header Navigation -->
+      			<header>
+        				<nav class="main-nav">
+          					<div class="logo">
+            						<a href="index.html">
+              							<img class="content-icon" alt="Koda Logo" src="assets/images/logo copy.svg">
+            						</a>
+          					</div>
+
+          					<!-- Desktop Navigation -->
+          					<div class="nav-links desktop-only">
+            						<a href="about.html" class="active" data-i18n-key="nav.about">About Koda</a>
+            						<a href="contact.html" data-i18n-key="nav.contact">Contact</a>
+            						<div class="language-switcher">
+              							<button id="language-toggle" aria-haspopup="true" aria-expanded="false">
+                								<span id="current-language">🇬🇧 EN</span> ▼
+              							</button>
+              							<ul id="language-menu" class="hidden">
+                								<li><a href="#" data-lang="en">🇬🇧 EN</a></li>
+                								<li><a href="#" data-lang="pt">🇧🇷 PT</a></li>
+                								<li><a href="#" data-lang="es">🇪🇸 ES</a></li>
+              							</ul>
+            						</div>
+            						<a href="https://getkoda.app/" class="demo-button" data-i18n-key="nav.get_started">Get Started</a>
+          					</div>
+
+          					<!-- Mobile Menu Toggle Button -->
+          					<button class="mobile-menu-toggle mobile-only" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            						<span class="menu-line"></span>
+            						<span class="menu-line"></span>
+            						<span class="menu-line"></span>
+          					</button>
+        				</nav>
+
+        				<!-- Mobile Dropdown Menu -->
+        				<div class="mobile-menu mobile-only" id="mobile-menu">
+          					<div class="mobile-menu-content">
+            						<!-- Top Row: About Koda, Contact, Language -->
+            						<div class="mobile-menu-row">
+              							<a href="about.html" class="mobile-menu-link active" data-i18n-key="nav.about">About Koda</a>
+              							<a href="contact.html" class="mobile-menu-link" data-i18n-key="nav.contact">Contact</a>
+              							<button class="mobile-menu-link mobile-lang-dropdown" id="mobile-lang-toggle">
+                								Language
+                								<span class="lang-right">
+                  									<span id="current-language-mobile" class="lang-flag">🇬🇧</span>
+                  									<span class="lang-arrow">▼</span>
+                								</span>
+              							</button>
+            						</div>
+
+            						<!-- Language Options (Hidden by default) -->
+            						<div class="mobile-language-options" id="mobile-lang-options">
+              							<button class="mobile-lang-btn active" data-lang="en">🇬🇧 English</button>
+              							<button class="mobile-lang-btn" data-lang="pt">🇧🇷 Português</button>
+              							<button class="mobile-lang-btn" data-lang="es">🇪🇸 Español</button>
+            						</div>
+
+            						<!-- Try Koda Button -->
+            						<a href="https://getkoda.app/" class="mobile-cta-btn" data-i18n-key="nav.get_started">Try Koda</a>
+          					</div>
+        				</div>
+      			</header>
+
+      			<!-- Hero Title -->
+      			<h1 class="hero-title-about" data-i18n-key="about.hero_line1">ABOUT</h1>
+      			<h1 class="hero-title-koda" data-i18n-key="about.hero_line2">KODA</h1>
+    		</section>
+
+    		<!-- Since 2025 Section -->
+    		<section class="since-section">
+      			<p class="since-tag" data-i18n-key="about.since_tag">SINCE 2025</p>
+      			<p class="since-message">
+        				<span class="text-grey" data-i18n-key="about.since_message_part1">Every document is </span>
+        				<span class="text-white" data-i18n-key="about.since_message_part2">fully encrypted</span>
+        				<span class="text-grey" data-i18n-key="about.since_message_part3">, and our </span>
+        				<span class="text-white" data-i18n-key="about.since_message_part4">zero-knowledge approach</span>
+        				<span class="text-grey" data-i18n-key="about.since_message_part5"> means only </span>
+        				<span class="text-white" data-i18n-key="about.since_message_part6">you control</span>
+        				<span class="text-grey" data-i18n-key="about.since_message_part7"> your data.</span>
+      			</p>
+    		</section>
+
+    		<!-- Background Image Section -->
+    		<section class="mockup-section">
+      			<div class="gradient-top"></div>
+      			<img src="assets/images/AB-Mockups.png" alt="Koda Mockups" class="mockup-image">
+      			<div class="gradient-bottom"></div>
+      			<div class="decorative-elements">
+        				<div class="circle-large-bg"></div>
+        				<div class="line-v-left"></div>
+        				<div class="line-v-right"></div>
+      			</div>
+    		</section>
+
+    		<!-- Mission, Vision, Values Section - Horizontal Layout -->
+    		<section class="mvv-section">
+      			<div class="mvv-item">
+        				<div class="mvv-number">01</div>
+        				<img src="assets/images/koda_icon_4.png" alt="Mission" class="mvv-image">
+        				<h3 class="mvv-title" data-i18n-key="about.mission_title">Our Mission</h3>
+        				<p class="mvv-description" data-i18n-key="about.mission_description">
+          					To empower individuals and families with a privacy-first AI document assistant that turns everyday file management into a seamless, secure, and stress-free experience.
+        				</p>
+      			</div>
+
+      			<div class="mvv-item">
+        				<div class="mvv-number">02</div>
+        				<img src="assets/images/koda_vision_v2.png" alt="Vision" class="mvv-image">
+        				<h3 class="mvv-title" data-i18n-key="about.vision_title">Our Vision</h3>
+        				<p class="mvv-description" data-i18n-key="about.vision_description">
+          					A world where everyone has full control over their personal information, without relying on complex enterprise tools or sacrificing privacy for convenience.
+        				</p>
+      			</div>
+
+      			<div class="mvv-item">
+        				<div class="mvv-number">03</div>
+        				<img src="assets/images/koda_icon_6.png" alt="Values" class="mvv-image">
+        				<h3 class="mvv-title" data-i18n-key="about.values_title">Our Values</h3>
+        				<p class="mvv-description" data-i18n-key="about.values_description">
+          					To empower individuals and families with a privacy-first AI document assistant that turns everyday file management into a seamless, secure, and stress-free experience.
+        				</p>
+      			</div>
+    		</section>
+
+    		<!-- Why KODA Section -->
+    		<section class="why-koda-section">
+      			<div class="why-header">
+        				<h2>
+          					<span class="text-grey" data-i18n-key="about.why_prefix">Why </span>
+          					<span class="text-white" data-i18n-key="about.why_koda">KODA?</span>
+        				</h2>
+        				<p data-i18n-key="about.why_description">Managing documents shouldn't feel like a full-time job. Most tools either sacrifice privacy, drown you in complexity, or weren't designed with individuals in mind. Koda is different.</p>
+      			</div>
+
+      			<div class="why-cards">
+        				<div class="why-card why-card-1">
+          					<h3 data-i18n-key="about.privacy_first">Privacy First</h3>
+        				</div>
+        				<div class="why-card why-card-2">
+          					<h3 data-i18n-key="about.smart_simple">Smart, Simple & Mobile</h3>
+        				</div>
+        				<div class="why-card why-card-3">
+          					<h3 data-i18n-key="about.all_in_one">All-in-One Organization</h3>
+        				</div>
+      			</div>
+    		</section>
+
+    		<!-- Join CTA Section -->
+    		<section class="join-section">
+      			<img src="assets/images/koda_values.png" alt="Join Koda" class="join-image">
+      			<div class="join-gradient"></div>
+      			<div class="join-content">
+        				<h2>
+          					<span class="text-white" data-i18n-key="about.join_now">Join now</span>
+          					<span class="text-grey" data-i18n-key="about.join_description"> for priority updates and exclusive benefits.</span>
+        				</h2>
+        				<a href="https://getkoda.app/" class="demo-button" data-i18n-key="about.try_now">Get Demo</a>
+      			</div>
+    		</section>
+
+    		<!-- Footer -->
+    		<footer class="site-footer">
+      			<div class="footer-main">
+        				<!-- Left Side: Logo and Newsletter -->
+        				<div class="footer-left">
+          					<img src="assets/images/logo copy.svg" alt="Koda Logo" class="footer-logo">
+          					<form class="newsletter-form">
+            						<input type="email" placeholder="Your email address" data-i18n-key="footer.newsletter_placeholder">
+            						<button type="submit" class="newsletter-submit">
+              							<span data-i18n-key="footer.newsletter_button">Subscribe to our newsletter</span>
+              							<div class="arrow-circle">
+                								<img src="assets/icons/send-icon.svg" alt="Submit">
+              							</div>
+            						</button>
+          					</form>
+          					<div class="footer-copyright">
+            						<span data-i18n-key="footer.copyright">© 2025 Koda. All rights reserved.</span>
+          					</div>
+        				</div>
+
+        				<!-- Right Side: Navigation Links -->
+        				<div class="footer-nav">
+          					<div class="nav-column">
+            						<h4 data-i18n-key="footer.company">Company</h4>
+            						<a href="about.html"><span data-i18n-key="nav.about">About Koda</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+            						<a href="contact.html"><span data-i18n-key="nav.contact">Contact</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+          					</div>
+          					<div class="nav-column">
+            						<h4 data-i18n-key="footer.policy">Policy</h4>
+            						<a href="terms.html"><span data-i18n-key="footer.terms">Our Terms of Use</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+            						<a href="privacy.html"><span data-i18n-key="footer.privacy">Privacy Policy</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+          					</div>
+        				</div>
+      			</div>
+
+      			<!-- Back to Top -->
+      			<a href="#top" class="back-to-top">
+        				<span data-i18n-key="footer.back_to_top">Back to Top</span>
+        				<img src="assets/icons/chevron-up.svg" alt="^">
+      			</a>
+    		</footer>
+  	</div>
+  	<script src="language-switcher.js"></script>
+  	<script src="mobile-menu.js"></script>
+</body>
+</html>

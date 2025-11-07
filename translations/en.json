@@ -1,0 +1,195 @@
+{
+  "nav": {
+    "about": "About Koda",
+    "contact": "Contact",
+    "get_started": "Get Started"
+  },
+  "hero": {
+    "title": "From Chaos to Clarity in Your Documents",
+    "subtitle": "The AI-powered document assistant that helps you organize, search, and understand your files"
+  },
+  "workflow": {
+    "title": "Flexible",
+    "subtitle": "For Every Professional Workflow",
+    "business": {
+      "title": "For Business",
+      "description": "Control contracts, audits, and reports—organized and encrypted."
+    },
+    "academics": {
+      "title": "For Academics",
+      "description": "Find research, notes, and citations in seconds—secure and structured."
+    },
+    "professionals": {
+      "title": "For Professionals",
+      "description": "From lawyers to journalists—manage critical documents without chaos."
+    },
+    "cta": "Try Koda"
+  },
+  "chaos": {
+    "title_highlight": "You're Losing 2 Full Days",
+    "title": "Every Month",
+    "subtitle": "Searching for documents eats up 7.5 hours monthly—that's nearly 20% of your work week. Time you'll never get back.",
+    "text_left": "Every minute spent searching for files, every moment of panic when you can't find one—it all adds up. You deserve better.",
+    "text_right": "Koda ends the chaos. Upload once, find instantly, stay secure always."
+  },
+  "how_it_works": {
+    "title_highlight": "How",
+    "title": "It Works?",
+    "intro": "Koda combines encrypted storage with AI assistance in one seamless experience. Upload your files, ask natural questions, and get instant, private answers—no digging, no sharing, no compromise.",
+    "upload": {
+      "title": "Upload Your Files",
+      "description": "Securely store documents, PDFs, notes, photos — anything you want to keep private and accessible. All files are end-to-end encrypted."
+    },
+    "ask": {
+      "title": "Ask Koda Anything",
+      "description": "Use natural language to ask questions about your documents. \"What's my tax refund status?\", \"Summarize my lease agreement.\""
+    },
+    "answers": {
+      "title": "Get Instant, Private Answers",
+      "description": "Koda's AI responds instantly using only your uploaded content — never connected to external data or models."
+    },
+    "organize": {
+      "title": "Stay Organized, Effortlessly",
+      "description": "Search, tag, group, and manage your documents via voice or text. Koda helps you stay on top of everything without digging through folders."
+    }
+  },
+  "features": {
+    "title_highlight": "Smart. Secure. Surprisingly",
+    "title": "Simple.",
+    "intro": "Koda helps you organize your digital life with zero friction. From encrypted storage to AI Q&A, everything is designed for privacy-first users who still want modern convenience.",
+    "encryption": {
+      "title": "End-to-End Encryption",
+      "description": "Your documents are encrypted before they leave your device. Only you have the keys."
+    },
+    "ai": {
+      "title": "AI-Powered Search & Q&A",
+      "description": "Ask questions, get summaries, extract data — all based solely on your files."
+    },
+    "organization": {
+      "title": "Smart Document Organization",
+      "description": "Automatically organize and tag your documents for effortless retrieval."
+    },
+    "offline": {
+      "title": "Offline Access & Sync",
+      "description": "Access your files anywhere, anytime. Seamless sync when you're back online."
+    }
+  },
+  "form": {
+    "title_highlight": "Signup",
+    "title": "Form",
+    "description": "Fill in the form below to get early access.",
+    "name": "Name",
+    "email": "Email",
+    "occupation": "Occupation/Industry",
+    "name_placeholder": "Enter your name",
+    "email_placeholder": "Enter your email",
+    "occupation_placeholder": "Enter your occupation/Industry",
+    "submit": "Request A Demo"
+  },
+  "cta": {
+    "your_prefix": "Your ",
+    "title_files": "Files",
+    "period_your": ". Your ",
+    "title_ai": "AI",
+    "title_rules": "Rules",
+    "description": "Koda gives you total control over your documents with private AI and encrypted storage — all on your phone."
+  },
+  "footer": {
+    "newsletter_placeholder": "Your email address",
+    "newsletter_button": "Subscribe to our newsletter",
+    "copyright": "© 2025 Koda. All rights reserved.",
+    "company": "Company",
+    "policy": "Policy",
+    "terms": "Our Terms of Use",
+    "privacy": "Privacy Policy",
+    "back_to_top": "Back to Top"
+  },
+  "about": {
+    "hero_line1": "ABOUT",
+    "hero_line2": "KODA",
+    "since_tag": "SINCE 2025",
+    "since_message_part1": "Every document is ",
+    "since_message_part2": "fully encrypted",
+    "since_message_part3": ", and our ",
+    "since_message_part4": "zero-knowledge approach",
+    "since_message_part5": " means only ",
+    "since_message_part6": "you control",
+    "since_message_part7": " your data.",
+    "mission_title": "Our Mission",
+    "mission_description": "To empower individuals and families with a privacy-first AI document assistant that turns everyday file management into a seamless, secure, and stress-free experience.",
+    "vision_title": "Our Vision",
+    "vision_description": "A world where everyone has full control over their personal information, without relying on complex enterprise tools or sacrificing privacy for convenience.",
+    "values_title": "Our Values",
+    "values_description": "To empower individuals and families with a privacy-first AI document assistant that turns everyday file management into a seamless, secure, and stress-free experience.",
+    "why_prefix": "Why ",
+    "why_koda": "KODA?",
+    "why_description": "Managing documents shouldn't feel like a full-time job. Most tools either sacrifice privacy, drown you in complexity, or weren't designed with individuals in mind. Koda is different.",
+    "privacy_first": "Privacy First",
+    "smart_simple": "Smart, Simple & Mobile",
+    "all_in_one": "All-in-One Organization",
+    "join_now": "Join now",
+    "join_description": " for priority updates and exclusive benefits.",
+    "try_now": "Try Now"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Feel free to contact us and we will reach back to you as soon as possible.",
+    "message": "Message",
+    "message_placeholder": "Add Message",
+    "submit": "Contact Us"
+  },
+  "waitlist": {
+    "title": "Koda Waitlist",
+    "description": "Welcome to Koda – Your AI-powered document assistant<br/>Thanks for your interest in Koda! We're putting the final touches on our Beta, and we'd love to give you early access as soon as it's ready.<br/>As a waitlist member, you'll get early access, priority feedback opportunities, exclusive updates – and one full year of Koda free once we launch.",
+    "submit": "Join The Waitlist"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated September 17, 2025",
+    "intro": "This Privacy Policy will help you better understand how we collect, use, and share your personal information.",
+    "intro_content": "Welcome to Koda, a secure document management and AI assistant platform built on a zero-knowledge architecture. Your privacy is fundamental to our mission of providing secure, intelligent document management solutions. We are committed to transparency about our data practices and to giving you meaningful control over your personal information. This Privacy Policy explains what information we collect, why we collect it, how we use it, and the choices you have regarding your personal data.",
+    "toc_title": "Table of Contents",
+    "section1_title": "What Information Do We Collect?",
+    "section1_content": "We collect information necessary to provide and improve our Service, but with a crucial distinction thanks to our zero-knowledge architecture: we never have access to the content of your documents. All your files and the information within them are encrypted on your device before they are uploaded to our servers. The encryption keys are derived from your password and are never transmitted to us or stored by us. This means only you can decrypt and view your documents.<br/><br/>The information we do collect is limited to what's essential for the functionality of the service:<br/><br/>Account Information: Your name, email address, and billing information (for paid plans).<br/>Usage Metadata: Information about how you use the service, such as the number of documents you store, file sizes, and general activity. This metadata does not include any information about the content of your documents.<br/>Device and Technical Information: Standard technical information such as your IP address, browser type, and operating system, which we use for security and to improve our service.",
+    "section2_title": "How Do We Use Your Information?",
+    "section2_content": "Our use of your information is strictly limited by our zero-knowledge architecture. We use the information we collect to:<br/><br/>Provide and Maintain the Service: We use your account information to manage your account and provide you with access to the Koda platform. We use encrypted versions of your documents to provide storage and syncing capabilities.<br/>Power the AI Assistant: Our AI assistant is designed to work with your encrypted data without ever decrypting it on our servers. All AI processing happens in a secure, isolated environment, and we do not have access to the content of your documents or the results of your AI queries. We do not use your data to train our AI models.<br/>Improve Our Service: We use anonymised usage metadata to understand how our service is used and to identify areas for improvement. This data is aggregated and does not contain any personal information.<br/>Communication and Support: We use your contact information to send you important service-related communications and to respond to your support requests. We cannot, however, access your documents to provide support.",
+    "section3_title": "Do We Use Cookies And Other Tracking Technologies?",
+    "section3_content": "We use cookies and similar technologies for essential functionslity, such as keeping you logged in to your account. We may also use cookies for analytics purposes to help us understand how our service is used. You can control the use of cookies through your browser settings.",
+    "section4_title": "How Long Do We Keep Your Information?",
+    "section4_content": "We retain your account information and usage metadata for as long as your account is active. Your encrypted documents are stored on our servers until you delete them. When you delete a document, it is permanently and irretrievably removed from our systems.",
+    "section5_title": "How Do We Keep Your Information Safe?",
+    "section5_content": "Koda is built on a zero-knowledge security model, which provides the strongest possible protection for your data. Here's what that means:<br/><br/>Client-Side Encryption: All your documents are encrypted on your device using industry-standard AES-256 encryption before they are transmitted to our servers. The encryption keys are derived from your password and are never sent to us.<br/>You Hold the Key: You are the only one who holds the key to decrypt your documents. We do not have access to your password or your encryption keys, and therefore we cannot decrypt your data.<br/>Protection from Breaches: In the unlikely event of a data breach of our servers, your documents would remain secure as they are encrypted and the attackers would not have the keys to decrypt them.<br/>Insider-Proof: Our zero-knowledge architecture means that no one at Koda, not even our system administrators, can access your documents.",
+    "section6_title": "What Are Your Privacy Rights?",
+    "section6_content": "Our zero-knowledge architecture gives you an unprecedented level of control over your data. Your privacy rights include:<br/><br/>The Right to be Forgotten: When you delete your data from Koda, it is permanently gone. We cannot recover it for you, nor can we provide it to any third party.<br/>The Right to Data Portability: You can download your documents from Koda at any time. Since you hold the encryption keys, you are in full control of your data.<br/>The Right to Access: You can access your documents at any time by logging into your Koda account. However, please note that we cannot provide you with a copy of your data because we cannot decrypt it.",
+    "section7_title": "How can you contact us about this policy?",
+    "section7_content": "If you have any questions or concerns about this Privacy Policy or our privacy practices, please contact us at:<br/><br/>support@kodapda.com"
+  },
+  "terms": {
+    "title": "Our Terms of Use",
+    "last_updated": "Last updated September 17, 2025",
+    "intro": "Read Our Terms Below To Learn More About Your Rights And Responsibilities As A KODA User.",
+    "intro_content": "Welcome to Koda, a secure document management and AI assistant platform built on a zero-knowledge architecture. These Terms of Use (\"Terms\") govern your access to and use of our services. By using Koda, you agree to these Terms. Our zero-knowledge model means we cannot access, view, or decrypt your content, giving you ultimate control and privacy. This fundamental principle shapes our mutual rights and responsibilities.",
+    "toc_title": "Table of Contents",
+    "section1_title": "1. Introduction",
+    "section1_content": "These Terms of Use constitute a legally binding agreement between you and Camasmie Gillet Inc. (\"Koda,\" \"we,\" or \"us\"). They govern your use of the Koda platform, including our website, mobile applications, and all related services (collectively, the \"Service\"). Our Service is built on a zero-knowledge architecture, which means we have no access to the content you store with us. All encryption and decryption of your documents happen on your device, ensuring only you can view your data. By using our Service, you agree to these Terms and our Privacy Policy, which details our commitment to this security model.",
+    "section2_title": "2. Eligibility",
+    "section2_content": "To use our Service, you must be at least 18 years old and have the legal capacity to enter into a binding contract. By creating an account, you represent and warrant that you meet these requirements. If you are using Koda on behalf of an organization, you represent that you have the authority to bind that organization to these Terms. You are responsible for ensuring that your use of the Service complies with all laws, rules, and regulations applicable to you. The Service is not available to any users previously removed from the Service by Koda.",
+    "section3_title": "3. Account Responsibilities",
+    "section3_content": "You are solely responsible for all activities that occur under your account. Because of our zero-knowledge architecture, your password is your master key. You are the only one who can access your account. If you lose your password, we cannot recover it for you, and you will lose access to your data permanently. This is a necessary consequence of our commitment to your privacy and security. You agree to keep your password confidential and to not share it with any third party. You must notify us immediately of any unauthorized use of your account.",
+    "section4_title": "4. Use of the Service",
+    "section4_content": "Koda grants you a limited, non-exclusive, non-transferable, and revocable license to use our Service for your personal or internal business purposes, subject to these Terms. You own your content. We do not claim any ownership of the documents or other content you store in Koda. Our Service's AI features operate on your encrypted data without ever decrypting it on our servers, ensuring your content remains private. You are responsible for the legality, reliability, and appropriateness of all content you store on Koda.",
+    "section5_title": "5. Prohibited Activities",
+    "section5_content": "You agree not to misuse the Koda Service or help anyone else to do so. This includes refraining from uploading or sharing any content that is illegal, harmful, or violates the rights of others. You must not attempt to circumvent any security features of the Service, nor access, tamper with, or use non-public areas of the Service. Furthermore, you agree not to interfere with or disrupt any user, host, or network, or use the Service for any purpose other than its intended use.<br/>Because we cannot see your content, we rely on you to use our service responsibly. We reserve the right to investigate and take appropriate action, including account suspension or termination, in response to reports of abuse or illegal activity.",
+    "section6_title": "6. Intellectual Property",
+    "section6_content": "All rights, title, and interest in and to the Koda Service (excluding user content) are and will remain the exclusive property of Koda and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Nothing in these Terms gives you a right to use the Koda name or any of the Koda trademarks, logos, domain names, and other distinctive brand features. We welcome your feedback, but please note that we may use your feedback without any obligation to you.",
+    "section7_title": "7. Termination",
+    "section7_content": "You are free to stop using our Service at any time. We also reserve the right to suspend or terminate your access to the Service with notice to you if you are in breach of these Terms, or if your use of the Service would cause a real risk of harm or loss to us or other users. Upon termination, your right to use the Service will immediately cease. When your account is terminated, your encrypted data will be permanently deleted from our servers. Because of our zero-knowledge architecture, this data is not recoverable by us or anyone else once deleted.",
+    "toc_section1": "Introduction",
+    "toc_section2": "Eligibility",
+    "toc_section3": "Account Responsibilities",
+    "toc_section4": "Use of the Service",
+    "toc_section5": "Prohibited Activities",
+    "toc_section6": "Intellectual Property",
+    "toc_section7": "Termination"
+  }
+}

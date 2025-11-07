@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<!-- ✅ MUST HAVE for mobile responsiveness! -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+  	<!-- Mobile browser theme -->
+  	<meta name="theme-color" content="#131210">
+
+  	<!-- iOS web app -->
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  	<meta name="apple-mobile-web-app-title" content="Koda">
+
+  	<!-- Android -->
+  	<meta name="mobile-web-app-capable" content="yes">
+
+  	<link rel="stylesheet"  href="./index.css?v=20251020-48" />
+  	<link rel="stylesheet" href="./language-switcher.css?v=20251020-28" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
+
+</head>
+<body>
+  	
+  	<div class="homepage">
+    		<section class="hero-section">
+      			<header>
+        				<nav class="main-nav">
+          					<div class="logo">
+            						<a href="/">
+              							<img class="content-icon" alt="Koda Logo" src="assets/images/logo copy.svg">
+            						</a>
+          					</div>
+
+          					<!-- Desktop Navigation -->
+          					<div class="nav-links desktop-only">
+            						<a href="about.html" data-i18n-key="nav.about">About Koda</a>
+            						<a href="contact.html" data-i18n-key="nav.contact">Contact</a>
+            						<div class="language-switcher">
+              							<button id="language-toggle" aria-haspopup="true" aria-expanded="false">
+                								<span id="current-language">🇬🇧 EN</span> ▼
+              							</button>
+              							<ul id="language-menu" class="hidden">
+                								<li><a href="#" data-lang="en">🇬🇧 EN</a></li>
+                								<li><a href="#" data-lang="pt">🇧🇷 PT</a></li>
+                								<li><a href="#" data-lang="es">🇪🇸 ES</a></li>
+              							</ul>
+            						</div>
+            						<a href="https://getkoda.app/" class="demo-button" data-i18n-key="nav.get_started">Get Started</a>
+          					</div>
+
+          					<!-- Mobile Menu Toggle Button (getkoda.io style) -->
+          					<button class="mobile-menu-toggle mobile-only" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            						<span class="menu-line"></span>
+            						<span class="menu-line"></span>
+            						<span class="menu-line"></span>
+          					</button>
+        				</nav>
+
+        				<!-- Mobile Dropdown Menu -->
+        				<div class="mobile-menu mobile-only" id="mobile-menu">
+          					<div class="mobile-menu-content">
+            						<!-- Top Row: About Koda, Contact, Language -->
+            						<div class="mobile-menu-row">
+              							<a href="about.html" class="mobile-menu-link" data-i18n-key="nav.about">About Koda</a>
+              							<a href="contact.html" class="mobile-menu-link" data-i18n-key="nav.contact">Contact</a>
+              							<button class="mobile-menu-link mobile-lang-dropdown" id="mobile-lang-toggle">
+                								Language
+                								<span class="lang-right">
+                  									<span id="current-language-mobile" class="lang-flag">🇬🇧</span>
+                  									<span class="lang-arrow">▼</span>
+                								</span>
+              							</button>
+            						</div>
+
+            						<!-- Language Options (Hidden by default) -->
+            						<div class="mobile-language-options" id="mobile-lang-options">
+              							<button class="mobile-lang-btn active" data-lang="en">🇬🇧 English</button>
+              							<button class="mobile-lang-btn" data-lang="pt">🇧🇷 Português</button>
+              							<button class="mobile-lang-btn" data-lang="es">🇪🇸 Español</button>
+            						</div>
+
+            						<!-- Try Koda Button -->
+            						<a href="https://getkoda.app/" class="mobile-cta-btn" data-i18n-key="nav.get_started">Try Koda</a>
+          					</div>
+        				</div>
+      			</header>
+      			<!-- Block 1: The Text Content -->
+      			<div class="hero-content">
+        				<h1 data-i18n-key="hero.title">From Chaos to Clarity in Your Documents</h1>
+      			</div>
+
+      			<!-- Block 2: The Laptop Mockup Image -->
+      			<div class="hero-image-container">
+        				<img src="assets/images/Untitled design.svg" alt="Koda App on Laptop Mockup">
+      			</div>
+    		</section>
+    		<section class="workflow-section">
+      			<h2><span data-i18n-key="workflow.title">Flexible</span> <span class="workflow-subtitle" data-i18n-key="workflow.subtitle">For Every Professional Workflow</span></h2>
+      			<div class="workflow-grid">
+        				<!-- Column 1: For Business -->
+        				<div class="workflow-card">
+          					<h3 data-i18n-key="workflow.business.title">For Business</h3>
+          					<img src="assets/images/Flex1.png" alt="Business Workflow" class="workflow-image">
+          					<p data-i18n-key="workflow.business.description">Control contracts, audits, and reports—organized and encrypted.</p>
+          					<a href="https://getkoda.app/" class="demo-button" data-i18n-key="workflow.business.cta">Explore Koda for Business</a>
+        				</div>
+
+        				<hr class="workflow-divider">
+
+        				<!-- Column 2: For Academics -->
+        				<div class="workflow-card">
+          					<h3 data-i18n-key="workflow.academics.title">For Academics</h3>
+          					<img src="assets/images/Flex2.png" alt="Academics Workflow" class="workflow-image">
+          					<p data-i18n-key="workflow.academics.description">Find research, notes, and citations in seconds—secure and structured.</p>
+          					<a href="https://getkoda.app/" class="demo-button" data-i18n-key="workflow.academics.cta">Request a Demo</a>
+        				</div>
+
+        				<hr class="workflow-divider">
+
+        				<!-- Column 3: For Professionals -->
+        				<div class="workflow-card">
+          					<h3 data-i18n-key="workflow.professionals.title">For Professionals</h3>
+          					<img src="assets/images/Flex3.1.png" alt="Professionals Workflow" class="workflow-image">
+          					<p data-i18n-key="workflow.professionals.description">From lawyers to journalists—manage critical documents without chaos.</p>
+          					<a href="https://getkoda.app/" class="demo-button" data-i18n-key="workflow.professionals.cta">Request a Demo</a>
+        				</div>
+      			</div>
+      			<div class="workflow-cta">
+        				<a href="https://getkoda.app/" class="workflow-button" data-i18n-key="workflow.cta">Try Koda</a>
+      			</div>
+    		</section>
+    		<section class="chaos-section">
+      			<!-- Header Group for Title and Subtitle -->
+      			<div class="chaos-header">
+        				<h2><span class="chaos-subtitle" data-i18n-key="chaos.title_highlight">You're Losing 2 Full Days</span> <span data-i18n-key="chaos.title">Every Month</span></h2>
+        				<p class="subtitle" data-i18n-key="chaos.subtitle">Searching for documents eats up 7.5 hours monthly—that's nearly 20% of your work week. Time you'll never get back.</p>
+      			</div>
+
+      			<!-- Three-Column Grid for Content -->
+      			<div class="chaos-grid">
+        				<div class="chaos-text-left">
+          					<p data-i18n-key="chaos.text_left">Every minute spent searching for files, every moment of panic when you can't find one—it all adds up. You deserve better.</p>
+        				</div>
+        				<div class="chaos-image-container">
+          					<img src="assets/images/2.svg" alt="Document Chaos Icons">
+        				</div>
+        				<div class="chaos-text-right">
+          					<p data-i18n-key="chaos.text_right">Koda ends the chaos. Upload once, find instantly, stay secure always.</p>
+        				</div>
+      			</div>
+    		</section>
+    		<section class="how-it-works-section">
+      			<!-- Section Header -->
+      			<div class="section-header">
+        				<h2><span class="how-subtitle" data-i18n-key="how_it_works.title_highlight">How</span> <span data-i18n-key="how_it_works.title">It Works?</span></h2>
+
+        				<!-- Full-width intro text -->
+        				<p class="intro-text" data-i18n-key="how_it_works.intro">
+          					Koda combines encrypted storage with AI assistance in one seamless experience.
+          					Upload your files, ask natural questions, and get instant, private answers—no digging,
+          					no sharing, no compromise.
+        				</p>
+      			</div>
+
+      			<!-- Features Grid -->
+      			<div class="box5">
+        				<div class="box6">
+          					<div class="container2">
+            						<div class="homepage-block">
+              							<div class="background-pattern">
+                								<div class="content8">
+                  									<div class="lines">
+                    										<div class="vertical">
+                      											<div class="line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="line">
+                      											</div>
+                    										</div>
+                    										<div class="horizontal">
+                      											<div class="line25">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line25">
+                      											</div>
+                    										</div>
+                  									</div>
+                								</div>
+              							</div>
+              							<div class="block-child">
+              							</div>
+              							<img class="iconixtolinearcloud-transfer" alt="Upload Files" src="assets/icons/cloud-transfer.svg">
+
+            						</div>
+            						<div class="text36">
+              							<div class="text9" data-i18n-key="how_it_works.upload.title">Upload Your Files</div>
+              							<div class="text38" data-i18n-key="how_it_works.upload.description">Securely store documents, PDFs, notes, photos — anything you want to keep private and accessible. All files are end-to-end encrypted.</div>
+            						</div>
+          					</div>
+          					<div class="container2">
+            						<div class="homepage-block">
+              							<div class="background-pattern">
+                								<div class="content8">
+                  									<div class="lines">
+                    										<div class="vertical">
+                      											<div class="line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="line">
+                      											</div>
+                    										</div>
+                    										<div class="horizontal">
+                      											<div class="line25">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line25">
+                      											</div>
+                    										</div>
+                  									</div>
+                								</div>
+              							</div>
+              							<div class="block-child">
+              							</div>
+              							<img class="iconixtolinearcloud-transfer" alt="AI Assistant" src="assets/icons/bot.svg">
+
+            						</div>
+            						<div class="text36">
+              							<div class="text9" data-i18n-key="how_it_works.ask.title">Ask Koda Anything</div>
+              							<div class="text38" data-i18n-key="how_it_works.ask.description">Use natural language to ask questions about your documents. "What's my tax refund status?", "Summarize my lease agreement."</div>
+            						</div>
+          					</div>
+        				</div>
+        				<div class="box6">
+          					<div class="container2">
+            						<div class="homepage-block">
+              							<div class="background-pattern">
+                								<div class="content8">
+                  									<div class="lines">
+                    										<div class="vertical">
+                      											<div class="line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="line">
+                      											</div>
+                    										</div>
+                    										<div class="horizontal">
+                      											<div class="line25">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line25">
+                      											</div>
+                    										</div>
+                  									</div>
+                								</div>
+              							</div>
+              							<div class="block-child">
+              							</div>
+              							<img class="iconixtolinearcloud-transfer" alt="Privacy" src="assets/icons/lock.svg">
+
+            						</div>
+            						<div class="text36">
+              							<div class="text9" data-i18n-key="how_it_works.answers.title">Get Instant, Private Answers</div>
+              							<div class="text38" data-i18n-key="how_it_works.answers.description">Koda's AI responds instantly using only your uploaded content — never connected to external data or models.</div>
+            						</div>
+          					</div>
+          					<div class="container2">
+            						<div class="homepage-block">
+              							<div class="background-pattern">
+                								<div class="content8">
+                  									<div class="lines">
+                    										<div class="vertical">
+                      											<div class="line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="homepage-line">
+                      											</div>
+                      											<div class="line">
+                      											</div>
+                    										</div>
+                    										<div class="horizontal">
+                      											<div class="line25">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line26">
+                      											</div>
+                      											<div class="line25">
+                      											</div>
+                    										</div>
+                  									</div>
+                								</div>
+              							</div>
+              							<div class="block-child">
+              							</div>
+              							<img class="iconixtolinearcloud-transfer" alt="Organization" src="assets/icons/scan.svg">
+
+            						</div>
+            						<div class="text36">
+              							<div class="text9" data-i18n-key="how_it_works.organize.title">Stay Organized, Effortlessly</div>
+              							<div class="text38" data-i18n-key="how_it_works.organize.description">Search, tag, group, and manage your documents via voice or text. Koda helps you stay on top of everything without digging through folders.</div>
+            						</div>
+          					</div>
+        				</div>
+      			</div>
+    		</section>
+    		<section class="smart-secure-section">
+      			<!-- Left Side: MacBook Mockup -->
+      			<div class="mockup-container">
+        				<img src="assets/images/Midnight.png" alt="Koda App on MacBook" class="macbook-mockup">
+      			</div>
+
+      			<!-- Right Side: Content -->
+      			<div class="content-container">
+        				<div class="section-header">
+          					<h2><span class="smart-subtitle" data-i18n-key="features.title_highlight">Smart. Secure. Surprisingly</span> <span data-i18n-key="features.title">Simple.</span></h2>
+          					<p class="intro-text" data-i18n-key="features.intro">Koda helps you organize your digital life with zero friction. From encrypted storage to AI Q&A, everything is designed for privacy-first users who still want modern convenience.</p>
+        				</div>
+
+        				<!-- Features Grid (2x2) -->
+        				<div class="features-grid">
+          					<!-- Feature 1: End-To-End Encryption -->
+          					<div class="feature-item">
+            						<div class="icon-circle">
+              							<img src="assets/icons/lock.svg" alt="Encryption Icon">
+            						</div>
+            						<h3 data-i18n-key="features.encryption.title">End-to-End Encryption</h3>
+            						<p data-i18n-key="features.encryption.description">Your documents are encrypted before they leave your device. Only you have the keys.</p>
+          					</div>
+
+          					<!-- Feature 2: AI-Powered Search & Q&A -->
+          					<div class="feature-item">
+            						<div class="icon-circle">
+              							<img src="assets/icons/bot.svg" alt="AI Icon">
+            						</div>
+            						<h3 data-i18n-key="features.ai.title">AI-Powered Search & Q&A</h3>
+            						<p data-i18n-key="features.ai.description">Ask questions, get summaries, extract data — all based solely on your files.</p>
+          					</div>
+
+          					<!-- Feature 3: Smart Document Organization -->
+          					<div class="feature-item">
+            						<div class="icon-circle">
+              							<img src="assets/icons/folder.svg" alt="Organization Icon">
+            						</div>
+            						<h3 data-i18n-key="features.organization.title">Smart Document Organization</h3>
+            						<p data-i18n-key="features.organization.description">Automatically organize and tag your documents for effortless retrieval.</p>
+          					</div>
+
+          					<!-- Feature 4: Offline Access & Sync -->
+          					<div class="feature-item">
+            						<div class="icon-circle">
+              							<img src="assets/icons/cloud-offline.svg" alt="Offline Icon">
+            						</div>
+            						<h3 data-i18n-key="features.offline.title">Offline Access & Sync</h3>
+            						<p data-i18n-key="features.offline.description">Access your files anywhere, anytime. Seamless sync when you're back online.</p>
+          					</div>
+        				</div>
+      			</div>
+    		</section>
+
+    		<div class="form-section">
+      			<div class="form-container">
+        				<!-- Form Header -->
+        				<div class="form-header">
+          					<h2><span class="signup-subtitle" data-i18n-key="form.title_highlight">Signup</span> <span data-i18n-key="form.title">Form</span></h2>
+          					<p data-i18n-key="form.description">Fill in the form below to get early access.</p>
+        				</div>
+
+        				<!-- The Form -->
+        				<form>
+          					<!-- Name Field -->
+          					<div class="form-group">
+            						<label for="name" data-i18n-key="form.name">Name</label>
+            						<input type="text" id="name" placeholder="Enter your name" data-i18n-key="form.name_placeholder">
+          					</div>
+
+          					<!-- Email Field -->
+          					<div class="form-group">
+            						<label for="email" data-i18n-key="form.email">Email</label>
+            						<input type="email" id="email" placeholder="Enter your email" data-i18n-key="form.email_placeholder">
+          					</div>
+
+          					<!-- Occupation/Industry Field -->
+          					<div class="form-group">
+            						<label for="occupation" data-i18n-key="form.occupation">Occupation/Industry</label>
+            						<input type="text" id="occupation" placeholder="Enter your occupation/Industry" data-i18n-key="form.occupation_placeholder">
+          					</div>
+
+          					<!-- Submit Button -->
+          					<button type="submit" class="submit-btn" data-i18n-key="form.submit">Request A Demo</button>
+        				</form>
+      			</div>
+    		</div>
+
+    		<!-- New Mobile Section - Your Files. Your AI. Your Rules (Mobile Only) -->
+    		<section class="smart-secure-mobile-new mobile-only">
+      			<div class="header-content">
+        				<div class="title">
+          					<span class="text-muted">Your </span><span class="text-white">Files</span><span class="text-muted">. Your </span><span class="text-white">AI</span><span class="text-muted">. Your </span><span class="text-white">Rules</span>
+        				</div>
+        				<div class="description">
+          					Koda gives you total control over your documents with private AI and encrypted storage — all on your phone.
+        				</div>
+      			</div>
+      			<div class="image-container" style="position: relative; display: flex; align-items: center; justify-content: center;">
+        				<div style="position: absolute; width: 85%; height: 70%; background-image: url('assets/images/bg.png'); background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: 32px; z-index: 0;"></div>
+        				<img src="assets/images/MacBook Pro 16 (14).png" alt="Koda on MacBook" style="width: 120%; height: 120%; object-fit: contain; position: relative; z-index: 1;">
+      			</div>
+    		</section>
+
+    		<div class="homepage-cta-block">
+      			<div class="homepage-cta">
+        				<div class="box15">
+          					<div class="text139">
+            						<div class="text9">
+              							<span data-i18n-key="cta.your_prefix">Your </span>
+              							<span class="document-chaos" data-i18n-key="cta.title_files">Files</span>
+              							<span data-i18n-key="cta.period_your">. Your </span>
+              							<span class="document-chaos" data-i18n-key="cta.title_ai">AI</span>
+              							<span data-i18n-key="cta.period_your">. Your </span>
+              							<span class="document-chaos" data-i18n-key="cta.title_rules">Rules</span>
+            						</div>
+            						<div class="text12" data-i18n-key="cta.description">Koda gives you total control over your documents with private AI and encrypted storage — all on your phone.</div>
+          					</div>
+        				</div>
+        				<div class="cta-image-container">
+        					<img class="visula-icon" alt="Koda on MacBook" src="assets/images/MacBook Pro 16 (14).png?v=2">
+        				</div>
+      			</div>
+    		</div>
+    		<footer class="site-footer">
+      			<div class="footer-main">
+        				<!-- Left Side: Logo and Newsletter -->
+        				<div class="footer-left">
+          					<img src="assets/images/logo copy.svg" alt="Koda Logo" class="footer-logo">
+          					<form class="newsletter-form">
+            						<input type="email" placeholder="Your email address" data-i18n-key="footer.newsletter_placeholder">
+            						<button type="submit" class="newsletter-submit">
+              							<span data-i18n-key="footer.newsletter_button">Subscribe to our newsletter</span>
+              							<div class="arrow-circle">
+                								<img src="assets/icons/send-icon.svg" alt="Submit">
+              							</div>
+            						</button>
+          					</form>
+          					<div class="footer-copyright">
+            						<span data-i18n-key="footer.copyright">© 2025 Koda. All rights reserved.</span>
+          					</div>
+        				</div>
+
+        				<!-- Right Side: Navigation Links -->
+        				<div class="footer-nav">
+          					<div class="nav-column">
+            						<h4 data-i18n-key="footer.company">Company</h4>
+            						<a href="about.html"><span data-i18n-key="nav.about">About Koda</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+            						<a href="contact.html"><span data-i18n-key="nav.contact">Contact</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+          					</div>
+          					<div class="nav-column">
+            						<h4 data-i18n-key="footer.policy">Policy</h4>
+            						<a href="terms.html"><span data-i18n-key="footer.terms">Our Terms of Use</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+            						<a href="privacy.html"><span data-i18n-key="footer.privacy">Privacy Policy</span> <img src="assets/icons/chevron-right.svg" alt=">"></a>
+          					</div>
+        				</div>
+      			</div>
+
+      			<!-- Back to Top -->
+      			<a href="#top" class="back-to-top">
+        				<span data-i18n-key="footer.back_to_top">Back to Top</span>
+        				<img src="assets/icons/chevron-up.svg" alt="^">
+      			</a>
+    		</footer>
+  	</div>
+
+
+
+  	<script src="language-switcher.js"></script>
+  	<script src="mobile-menu.js?v=20251020"></script>
+</body>
+</html>
