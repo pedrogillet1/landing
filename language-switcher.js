@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Language flags mapping
+  // Language flags mapping (using SVG images)
   const languageFlags = {
-    'en': '🇬🇧',
-    'pt': '🇧🇷',
-    'es': '🇪🇸'
+    'en': 'assets/icons/flag-us.svg',
+    'pt': 'assets/icons/flag-br.svg',
+    'es': 'assets/icons/flag-es.svg'
   };
 
   // Function to set the language
@@ -41,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       localStorage.setItem('language', lang);
       if (currentLanguageSpan) {
-        const flag = languageFlags[lang] || '';
-        currentLanguageSpan.textContent = `${flag} ${lang.toUpperCase()}`;
+        const flagSrc = languageFlags[lang] || languageFlags['en'];
+        currentLanguageSpan.innerHTML = `<img src="${flagSrc}" alt="${lang.toUpperCase()}" class="flag-icon"> ${lang.toUpperCase()}`;
       }
 
       // Apply translations
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
     suggestLanguage();
     // Set default to English
     if (currentLanguageSpan) {
-      currentLanguageSpan.textContent = '🇬🇧 EN';
+      currentLanguageSpan.innerHTML = '<img src="assets/icons/flag-us.svg" alt="EN" class="flag-icon"> EN';
     }
   }
 });

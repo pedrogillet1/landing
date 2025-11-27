@@ -5,11 +5,20 @@
   margin-right: 24px;
 }
 
+.flag-icon {
+  width: 20px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 #language-toggle {
   background-color: transparent;
   border: none;
   color: #FFFFFF;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
@@ -26,8 +35,8 @@
 }
 
 #language-toggle[aria-expanded="true"] {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
 }
 
 #language-toggle:focus {
@@ -39,9 +48,9 @@
   position: absolute;
   top: calc(100% + 8px);
   right: 0;
-  background-color: #FFFFFF;
+  background-color: #1a1a1a;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   list-style: none;
   padding: 8px 0;
   margin: 0;
@@ -50,6 +59,7 @@
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.2s ease, transform 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #language-menu.hidden {
@@ -66,20 +76,20 @@
 #language-menu li a {
   display: block;
   padding: 12px 20px;
-  color: #333333;
+  color: #FFFFFF;
   text-decoration: none;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Plus Jakarta Sans', sans-serif;
   font-size: 14px;
   font-weight: 500;
   transition: background-color 0.2s ease;
 }
 
 #language-menu li a:hover {
-  background-color: #F5F5F5;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 #language-menu li a:active {
-  background-color: #E5E5E5;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Language suggestion bar */

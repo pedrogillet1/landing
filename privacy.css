@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     line-height: normal;
@@ -156,7 +157,7 @@ body {
 }
 
 .nav-links a.active {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: transparent;
 }
 
 .demo-button {
@@ -537,4 +538,41 @@ body {
 .back-to-top:hover img {
     opacity: 1;
     transform: translateY(-2px);
+}
+
+/* Desktop Responsive Styles - For screens larger than 1440px */
+@media (min-width: 1441px) {
+    /* Privacy Page - Center content */
+    .privacy-page {
+        align-items: center;
+    }
+
+    /* Privacy Hero - Limit width */
+    .privacy-hero {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Navigation - Keep centered */
+    .main-nav {
+        max-width: 1360px;
+    }
+
+    /* Privacy Content - Limit width */
+    .privacy-content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* Footer - Full width but content centered */
+    .site-footer {
+        padding-left: max(80px, calc((100vw - 1440px) / 2 + 80px));
+        padding-right: max(80px, calc((100vw - 1440px) / 2 + 80px));
+    }
+
+    .footer-main {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
 }

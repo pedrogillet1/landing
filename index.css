@@ -176,8 +176,8 @@ body {
 }
 
 .content-icon {
-    height: 50px;
-    width: 125px;
+    height: 70px;
+    width: 175px;
     object-fit: contain;
 }
 
@@ -185,10 +185,11 @@ body {
     display: flex;
     align-items: center;
     gap: 24px;
+    margin-left: auto;
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: #ffffff !important;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -198,17 +199,21 @@ body {
     border-radius: 100px;
 }
 
+.nav-links a:visited {
+    color: #ffffff !important;
+}
+
 .nav-links a:hover {
     opacity: 0.8;
 }
 
 .nav-links a.active {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: transparent;
 }
 
 .nav-links .demo-button {
     background-color: #ffffff;
-    color: #000000;
+    color: #000000 !important;
     padding: 12px 24px;
     border-radius: 100px;
     font-weight: 600;
@@ -217,6 +222,7 @@ body {
 
 .nav-links .demo-button:hover {
     background-color: #e0e0e0;
+    color: #000000 !important;
     opacity: 1;
 }
 
@@ -383,15 +389,18 @@ body {
 /* Laptop Mockup Image Container */
 .hero-image-container {
     width: 100%;
-    max-width: 2000px; /* Significantly increased for much larger laptop */
+    max-width: 2000px;
     flex-shrink: 1; /* Allows the image to shrink if needed */
     line-height: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .hero-image-container img {
     width: 100%;
     height: auto;
-    max-height: 1000px; /* Significantly increased for much larger laptop */
+    max-height: 1200px;
     object-fit: contain; /* Maintains aspect ratio while respecting max-height */
 }
 
@@ -401,6 +410,8 @@ body {
     background-color: #131210;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .workflow-section h2 {
@@ -980,6 +991,8 @@ body {
     text-align: center;
     padding: 100px 40px;
     background-color: #131210;
+    position: relative;
+    z-index: 1;
 }
 
 /* Header Styling */
@@ -1064,6 +1077,8 @@ body {
     gap: 80px;
     background-color: #121212;
     color: #ffffff;
+    position: relative;
+    z-index: 1;
 }
 
 .section-header {
@@ -1329,6 +1344,7 @@ body {
     align-items: center;
     gap: 80px;
     overflow: visible;
+    z-index: 1;
 }
 
 /* Left Side: MacBook Mockup Container */
@@ -2086,14 +2102,18 @@ body {
     position: relative;
     height: 750px;
     font-size: 64px;
+    background-color: #121212;
+    z-index: 1;
 }
 
 .homepage-cta {
     position: absolute;
     top: 112px;
-    left: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 57px;
 }
 
@@ -2172,6 +2192,7 @@ body {
     padding: 80px 80px 40px 80px;
     overflow: hidden;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 /* Background Watermark */
@@ -2765,6 +2786,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 /* --- CRITICAL: The Form Container --- */
@@ -3011,6 +3034,7 @@ body {
         background: #21201E;
         visibility: hidden;
         opacity: 0;
+        display: none;
         transition: all 0.3s ease;
         z-index: 999;
         overflow-y: auto;
@@ -3020,6 +3044,7 @@ body {
     .mobile-menu.active {
         visibility: visible;
         opacity: 1;
+        display: block;
     }
 
     .mobile-menu-content {
@@ -3503,6 +3528,8 @@ body {
         gap: 48px;
         display: inline-flex;
         background-color: #121212;
+        position: relative;
+        z-index: 1;
     }
 
     .smart-secure-mobile-new .header-content {
@@ -3857,3 +3884,6 @@ body {
         scroll-behavior: auto !important;
     }
 }
+/* Get Started button text must be black */
+.demo-button { color: #000 !important; }
+
