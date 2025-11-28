@@ -2,10 +2,15 @@
 <html>
 <head>
   	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
 
-  	<link rel="stylesheet" href="./about.css" />
-  	<link rel="stylesheet" href="./language-switcher.css" />
+  	<!-- Mobile browser theme -->
+  	<meta name="theme-color" content="#131210">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+  	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  	<link rel="stylesheet" href="./about.css?v=20251128020" />
+  	<link rel="stylesheet" href="./language-switcher.css?v=20251128" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
 
   	<title>About Koda</title>
@@ -41,12 +46,12 @@
             						<a href="contact.html" data-i18n-key="nav.contact">Contact</a>
             						<div class="language-switcher">
               							<button id="language-toggle" aria-haspopup="true" aria-expanded="false">
-                								<span id="current-language">🇬🇧 EN</span> ▼
+                								<span id="current-language"><img src="assets/icons/flag-us.svg" alt="US" class="flag-icon"> EN</span> ▼
               							</button>
               							<ul id="language-menu" class="hidden">
-                								<li><a href="#" data-lang="en">🇬🇧 EN</a></li>
-                								<li><a href="#" data-lang="pt">🇧🇷 PT</a></li>
-                								<li><a href="#" data-lang="es">🇪🇸 ES</a></li>
+                								<li><a href="#" data-lang="en"><img src="assets/icons/flag-us.svg" alt="US" class="flag-icon"> EN</a></li>
+                								<li><a href="#" data-lang="pt"><img src="assets/icons/flag-br.svg" alt="BR" class="flag-icon"> PT</a></li>
+                								<li><a href="#" data-lang="es"><img src="assets/icons/flag-es.svg" alt="ES" class="flag-icon"> ES</a></li>
               							</ul>
             						</div>
             						<a href="https://getkoda.app/" class="demo-button" data-i18n-key="nav.get_started">Get Started</a>
@@ -224,8 +229,8 @@
       			</a>
     		</footer>
   	</div>
-  	<script src="language-switcher.js"></script>
-  	<script src="mobile-menu.js"></script>
+  	<script src="language-switcher.js?v=20251128"></script>
+  	<script src="mobile-menu.js?v=20251128"></script>
   	<script>
   		// Hide/show nav on scroll
   		let lastScrollTop = 0;

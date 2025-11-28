@@ -2474,6 +2474,17 @@ html, body {
 @media (max-width: 768px) {
     .site-footer {
         padding: 40px 20px 30px 20px;
+        overflow: hidden;
+    }
+
+    /* Watermark logo - contained and centered on mobile */
+    .site-footer::after {
+        width: 200px;
+        height: 200px;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        opacity: 0.03;
     }
 
     .footer-main {
@@ -3011,18 +3022,19 @@ html, body {
         padding: 80px 16px 40px 16px;
     }
 
-    /* Navigation - Mobile (getkoda.io style) */
+    /* Navigation - Mobile (Pill Style) */
     header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         z-index: 1000;
-        background: #21201E;
-        padding: 12px;
-        height: 64px; /* Exact getkoda.io height */
+        background: transparent;
+        padding: 12px 16px;
+        height: auto;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .main-nav {
@@ -3030,67 +3042,77 @@ html, body {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        max-width: none;
+        padding: 12px 20px;
+        background: rgba(33, 32, 30, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none !important;
+        height: auto;
     }
 
     .nav-links {
-        display: none !important; /* Hide desktop nav on mobile */
+        display: none !important;
     }
 
-    /* Mobile Menu Button - getkoda.io Style */
+    .nav-links.desktop-only {
+        display: none !important;
+    }
+
+    /* Mobile Menu Button */
     .mobile-menu-toggle {
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
+        gap: 5px;
         width: 40px;
         height: 40px;
-        padding: 0;
+        padding: 8px;
         background: transparent;
         border: none;
         cursor: pointer;
         transition: all 0.3s ease;
         position: relative;
         z-index: 1001;
+        flex-shrink: 0;
     }
 
     .mobile-menu-toggle .menu-line {
         display: block;
-        width: 20px;
+        width: 22px;
         height: 2px;
         background: white;
         transition: all 0.3s ease;
-        border-radius: 1px;
-    }
-
-    .mobile-menu-toggle .menu-line:nth-child(2) {
-        margin: 8px 0;
+        border-radius: 2px;
     }
 
     .mobile-menu-toggle.active .menu-line:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
 
     .mobile-menu-toggle.active .menu-line:nth-child(2) {
         opacity: 0;
-        margin: 8px 0;
     }
 
     .mobile-menu-toggle.active .menu-line:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
 
-    .mobile-menu-toggle .menu-icon {
+    .mobile-menu-toggle .menu-icon,
+    .hamburger-icon {
         display: none;
     }
 
-    .hamburger-icon {
-        display: none; /* Hide old SVG icon */
-    }
-
-    /* Full-Screen Overlay Menu (getkoda.io style) */
+    /* Full-Screen Overlay Menu */
     .mobile-menu {
         position: fixed;
-        top: 64px; /* Below header */
+        top: 76px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -3111,36 +3133,37 @@ html, body {
     }
 
     .mobile-menu-content {
-        padding: 20px 20px 40px 20px;
+        padding: 24px 20px 40px 20px;
         display: flex;
         flex-direction: column;
         gap: 0;
-        min-height: calc(100vh - 64px);
+        min-height: calc(100vh - 76px);
     }
 
-    /* Menu Items - Vertical List */
+    /* Menu Items */
     .mobile-menu-row {
         display: flex;
         flex-direction: column;
-        gap: 0;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .mobile-menu-link {
         color: white;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 28px;
         font-weight: 500;
         background: transparent;
         border: none;
-        padding: 16px 0;
+        padding: 24px 0;
         cursor: pointer;
         font-family: 'Plus Jakarta Sans', sans-serif;
         transition: opacity 0.3s ease;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        text-align: center;
+        width: 100%;
     }
 
     .mobile-menu-link:last-child {
@@ -3153,12 +3176,13 @@ html, body {
 
     .mobile-lang-dropdown {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        gap: 12px;
         width: 100%;
-        text-align: left;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        text-align: center;
+        padding: 24px 0 !important;
+        font-size: 28px;
     }
 
     .mobile-lang-dropdown .lang-right {
@@ -3227,16 +3251,16 @@ html, body {
     .mobile-cta-btn {
         display: block;
         width: 100%;
-        padding: 13px 20px;
+        padding: 18px 20px;
         background: white;
         color: #131313;
         text-decoration: none;
         text-align: center;
-        border-radius: 14px;
-        font-size: 16px;
+        border-radius: 100px;
+        font-size: 18px;
         font-weight: 600;
         transition: all 0.3s ease;
-        margin-top: auto; /* Push to bottom */
+        margin-top: 24px;
         line-height: 1.5;
     }
 
@@ -3253,7 +3277,7 @@ html, body {
     /* Logo */
     .logo img,
     .content-icon {
-        height: 32px;
+        height: 60px;
         width: auto;
     }
 
