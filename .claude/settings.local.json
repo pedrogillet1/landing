@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx live-server --port=5500 --open=index.html)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

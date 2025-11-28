@@ -13,6 +13,11 @@ body {
     overflow-x: hidden;
 }
 
+/* Ensure hero section doesn't clip centered content */
+.hero-section {
+    overflow: visible !important;
+}
+
 .about-page {
     width: 100%;
     background-color: #131210;
@@ -22,8 +27,7 @@ body {
 .hero-section {
     position: relative;
     height: 902px;
-    overflow-x: clip;
-    overflow-y: visible;
+    overflow: visible;
     background-color: #131210;
 }
 
@@ -57,47 +61,27 @@ body {
 }
 
 .line {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.05);
+    display: none;
 }
 
 .line-h1 {
-    width: 1440px;
-    height: 1px;
-    left: 31px;
-    top: 760px;
+    display: none;
 }
 
 .line-h2 {
-    width: 1440px;
-    height: 1px;
-    left: 31px;
-    top: 540px;
+    display: none;
 }
 
 .line-h3 {
-    width: 1440px;
-    height: 1px;
-    left: 31px;
-    top: 320px;
+    display: none;
 }
 
 .line-v1 {
-    width: 1px;
-    height: 2309px;
-    left: 348px;
-    top: 2312px;
-    transform: rotate(-90deg);
-    transform-origin: top left;
+    display: none;
 }
 
 .line-v2 {
-    width: 1px;
-    height: 2309px;
-    left: 1153px;
-    top: 2373px;
-    transform: rotate(-90deg);
-    transform-origin: top left;
+    display: none;
 }
 
 /* Header Navigation - Homepage Style */
@@ -109,15 +93,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 40px;
+    padding: 16px 60px;
     background-color: rgba(18, 18, 18, 0.9);
     backdrop-filter: blur(10px);
     border-radius: 100px;
-    width: 1360px;
+    width: calc(100% - 80px);
+    max-width: none;
     height: 80px;
     box-sizing: border-box;
     z-index: 100;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .logo {
@@ -133,9 +119,10 @@ body {
 }
 
 .content-icon {
-    height: 50px;
-    width: 125px;
+    height: 60px;
+    width: auto;
     object-fit: contain;
+    vertical-align: middle;
 }
 
 .nav-links {
@@ -195,26 +182,26 @@ body {
 /* Hero Titles */
 .hero-title-about {
     position: absolute;
-    left: 40px;
-    top: 224px;
+    right: 60%;
+    top: 200px;
     color: white;
-    font-size: 112px;
+    font-size: 200px;
     font-weight: 500;
     text-transform: capitalize;
-    line-height: 123px;
+    line-height: 1;
     z-index: 5;
     white-space: nowrap;
 }
 
 .hero-title-koda {
     position: absolute;
-    left: 290px;
-    top: 314px;
+    right: 55%;
+    top: 500px;
     color: white;
-    font-size: 112px;
+    font-size: 200px;
     font-weight: 500;
     text-transform: capitalize;
-    line-height: 123px;
+    line-height: 1;
     z-index: 5;
     white-space: nowrap;
 }
@@ -235,19 +222,22 @@ html[lang="es"] .hero-title-koda {
     right: -350px;
     top: 340px;
     transform: none;
-    width: 750px;
-    height: auto;
+    width: 1200px !important;
+    max-width: none !important;
+    height: auto !important;
     opacity: 1;
     z-index: 1;
 }
 
 /* Since 2025 Section */
 .since-section {
-    padding: 112px 40px;
+    padding: 112px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .since-tag {
@@ -260,7 +250,8 @@ html[lang="es"] .hero-title-koda {
 }
 
 .since-message {
-    width: 1096px;
+    width: 100%;
+    max-width: none;
     text-align: center;
     font-size: 48px;
     font-weight: 500;
@@ -280,10 +271,10 @@ html[lang="es"] .hero-title-koda {
 /* Mockup Section */
 .mockup-section {
     position: relative;
-    width: 1440px;
+    width: 100%;
+    max-width: none;
     height: 931px;
     overflow: hidden;
-    margin: 0 auto;
 }
 
 .mockup-image {
@@ -294,7 +285,7 @@ html[lang="es"] .hero-title-koda {
 
 .gradient-top {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 243px;
     left: 0;
     top: 0;
@@ -304,7 +295,7 @@ html[lang="es"] .hero-title-koda {
 
 .gradient-bottom {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 243px;
     left: 0;
     top: 688px;
@@ -321,35 +312,15 @@ html[lang="es"] .hero-title-koda {
 }
 
 .circle-large-bg {
-    position: absolute;
-    width: 1503px;
-    height: 1503px;
-    left: 0;
-    top: 0;
-    border-radius: 9999px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: none;
 }
 
 .line-v-left {
-    position: absolute;
-    width: 1px;
-    height: 2309px;
-    left: 348px;
-    top: 3729px;
-    transform: rotate(-90deg);
-    transform-origin: top left;
-    background: rgba(255, 255, 255, 0.05);
+    display: none;
 }
 
 .line-v-right {
-    position: absolute;
-    width: 1px;
-    height: 2309px;
-    left: 1153px;
-    top: 3790px;
-    transform: rotate(-90deg);
-    transform-origin: top left;
-    background: rgba(255, 255, 255, 0.05);
+    display: none;
 }
 
 .mockup-description {
@@ -367,10 +338,12 @@ html[lang="es"] .hero-title-koda {
 
 /* Mission, Vision, Values Section - Horizontal Layout */
 .mvv-section {
-    padding: 112px 40px;
+    padding: 40px 0 112px 0;
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .mvv-item {
@@ -420,6 +393,11 @@ html[lang="es"] .hero-title-koda {
     display: none;
 }
 
+/* Add top border to first mvv-item */
+.mvv-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+}
+
 /* Remove bottom fade from last section */
 .mvv-item:last-child::after {
     display: none;
@@ -440,31 +418,39 @@ html[lang="es"] .hero-title-koda {
     position: absolute;
     width: 434px;
     height: 255px;
-    left: 174px;
+    right: 70%;
     top: 0;
     z-index: 3;
 }
 
+.mvv-item:nth-child(2) .mvv-image {
+    width: 200px;
+    height: auto;
+    top: 30px;
+}
+
 .mvv-title {
     position: absolute;
-    left: 0;
-    top: 109px;
+    left: 150px;
+    top: 100px;
     color: rgba(255, 255, 255, 0.70);
-    font-size: 34px;
+    font-size: 44px;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 37.40px;
+    line-height: 1;
     letter-spacing: 0.68px;
     z-index: 3;
 }
 
 .mvv-description {
     position: absolute;
-    width: 752px;
+    width: auto;
+    max-width: 752px;
     left: 608px;
+    right: 0;
     top: 103px;
     color: rgba(255, 255, 255, 0.80);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     z-index: 3;
@@ -474,42 +460,52 @@ html[lang="es"] .hero-title-koda {
 .why-koda-section {
     position: relative;
     height: 816px;
-    padding: 0 40px;
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    overflow: visible;
+    margin-left: calc(-50vw + 50%);
 }
 
 .why-header {
     position: absolute;
-    width: 645px;
-    left: 40px;
-    top: 112px;
+    width: auto;
+    max-width: 645px;
+    left: 0;
+    top: 84px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 175px;
 }
 
 .why-header h2 {
-    font-size: 48px;
+    font-size: 120px;
     font-weight: 500;
     text-transform: capitalize;
     line-height: 52.80px;
+    text-align: center;
 }
 
 .why-header p {
     color: rgba(255, 255, 255, 0.80);
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 42px;
 }
 
 .why-cards {
     position: absolute;
-    width: 1440px;
     height: 584px;
-    left: 0;
     top: 232px;
     display: flex;
-    justify-content: flex-start;
     align-items: flex-end;
+    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    margin: 0;
+    margin-left: calc(50% - 50vw);
 }
 
 .why-card {
@@ -519,6 +515,50 @@ html[lang="es"] .hero-title-koda {
     justify-content: center;
     border-top: 1px solid rgba(255, 255, 255, 0.20);
     border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+/* Extend lines to left edge */
+.why-card-1::before {
+    content: '';
+    position: absolute;
+    left: -100vw;
+    top: -1px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.why-card-1::after {
+    content: '';
+    position: absolute;
+    left: -100vw;
+    bottom: -1px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+/* Extend lines to right edge */
+.why-card-3::before {
+    content: '';
+    position: absolute;
+    right: -100vw;
+    top: -1px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.20);
+}
+
+.why-card-3::after {
+    content: '';
+    position: absolute;
+    right: -100vw;
+    bottom: -1px;
+    width: 100vw;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.20);
 }
 
 .why-card h3 {
@@ -532,53 +572,67 @@ html[lang="es"] .hero-title-koda {
 }
 
 .why-card-1 {
-    width: 480px;
+    flex: 1;
     height: 352px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-card-1 h3 {
+    transform: translateX(0px);
 }
 
 .why-card-2 {
-    width: 480px;
+    flex: 1;
     height: 482px;
     border-left: 1px solid rgba(255, 255, 255, 0.20);
 }
 
 .why-card-2 h3 {
-    width: 318px;
 }
 
 .why-card-3 {
-    width: 480px;
+    flex: 1;
     height: 584px;
     border-left: 1px solid rgba(255, 255, 255, 0.20);
-    border-right: 1px solid rgba(255, 255, 255, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .why-card-3 h3 {
-    width: 362px;
+    transform: translateX(70px);
 }
 
 /* Join Section */
 .join-section {
     position: relative;
-    padding: 112px 80px;
+    padding: 112px 60px;
     overflow: hidden;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 30px;
 }
 
 .join-image {
-    position: absolute;
-    width: 676px;
-    height: 597px;
-    left: -80px;
-    top: -66.94px;
+    position: relative;
+    width: 400px;
+    height: auto;
     opacity: 0.8;
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.15))
+            drop-shadow(0 0 40px rgba(255, 255, 255, 0.08));
+    clip-path: inset(0 0 0 5%);
+    transform: translateY(-5%);
 }
 
 .join-gradient {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 243px;
     left: 0;
     top: 221px;
@@ -586,7 +640,9 @@ html[lang="es"] .hero-title-koda {
 }
 
 .join-content {
-    width: 895px;
+    width: auto;
+    max-width: 895px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -625,11 +681,10 @@ html[lang="es"] .hero-title-koda {
 /* Footer - Homepage Style */
 .site-footer {
     position: relative;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
     background-color: #121212;
     color: #E0E0E0;
-    padding: 80px 80px 40px 80px;
+    padding: 80px 60px 40px 60px;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -657,9 +712,9 @@ html[lang="es"] .hero-title-koda {
     z-index: 1;
     display: flex;
     justify-content: space-between;
-    gap: 80px;
-    max-width: 1280px;
-    margin: 0 auto 40px auto;
+    max-width: none;
+    width: 100%;
+    margin: 0 0 40px 0;
 }
 
 /* Left Side: Logo, Newsletter, Copyright */
@@ -671,7 +726,7 @@ html[lang="es"] .hero-title-koda {
 }
 
 .footer-logo {
-    width: 120px;
+    width: 180px;
     height: auto;
 }
 
@@ -684,13 +739,13 @@ html[lang="es"] .hero-title-koda {
 
 .newsletter-form input[type="email"] {
     width: 100%;
-    padding: 14px 0;
+    padding: 18px 0;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #444444;
     border-radius: 0;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -710,12 +765,12 @@ html[lang="es"] .hero-title-koda {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 12px 16px;
+    padding: 16px 0;
     background-color: transparent;
     border: none;
     border-radius: 0;
     color: #E0E0E0;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 500;
     cursor: pointer;
@@ -734,8 +789,8 @@ html[lang="es"] .hero-title-koda {
 
 /* Circular Arrow Button */
 .arrow-circle {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #ffffff;
     display: flex;
@@ -750,8 +805,8 @@ html[lang="es"] .hero-title-koda {
 }
 
 .arrow-circle img {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
 }
 
 /* Footer Copyright */
@@ -759,7 +814,7 @@ html[lang="es"] .hero-title-koda {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 14px;
+    font-size: 20px;
     color: #9E9E9E;
     flex-wrap: wrap;
 }
@@ -780,10 +835,9 @@ html[lang="es"] .hero-title-koda {
 
 /* Right Side: Navigation Links */
 .footer-nav {
+    display: flex;
     flex: 1;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    justify-content: space-around;
 }
 
 .nav-column {
@@ -795,7 +849,7 @@ html[lang="es"] .hero-title-koda {
 .nav-column h4 {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 30px;
     color: #ffffff;
     margin: 0;
     text-transform: uppercase;
@@ -808,7 +862,7 @@ html[lang="es"] .hero-title-koda {
     gap: 8px;
     color: #B0B0B0;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 25px;
     font-family: 'Plus Jakarta Sans', sans-serif;
     transition: color 0.3s ease;
 }
@@ -837,7 +891,7 @@ html[lang="es"] .hero-title-koda {
     align-items: center;
     justify-content: flex-end;
     gap: 8px;
-    margin: 40px 80px 0 0;
+    margin: 40px 0 0 0;
     color: #B0B0B0;
     text-decoration: none;
     font-size: 14px;
@@ -865,7 +919,8 @@ html[lang="es"] .hero-title-koda {
 /* Desktop Responsive Styles - For screens larger than 1440px */
 @media (min-width: 1441px) {
     .about-page {
-        max-width: 100%;
+        max-width: none;
+        width: 100%;
     }
 
     /* Hero Section - Scale for larger screens */
@@ -877,8 +932,8 @@ html[lang="es"] .hero-title-koda {
     .decorative-circles {
         width: 100vw;
         height: 100vw;
-        max-width: 1800px;
-        max-height: 1800px;
+        max-width: none;
+        max-height: none;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -894,20 +949,22 @@ html[lang="es"] .hero-title-koda {
         transform: translate(-50%, -50%);
     }
 
-    /* Navigation - Center and limit width */
+    /* Navigation - Full width */
     .main-nav {
-        max-width: 1360px;
+        max-width: none;
+        width: calc(100% - 80px);
     }
 
     /* Hero Titles - Better positioning for wide screens */
     .hero-title-about {
-        left: 125px;
-        font-size: min(112px, 7vw);
+        right: 60%;
+        font-size: 200px;
     }
 
     .hero-title-koda {
-        left: 374px;
-        font-size: min(112px, 7vw);
+        right: 55%;
+        top: 500px;
+        font-size: 200px;
     }
 
     /* Hero XY Image - Adjust for wide screens */
@@ -917,28 +974,29 @@ html[lang="es"] .hero-title-koda {
         width: min(1100px, 50vw);
     }
 
-    /* Since Section - Limit width and center */
+    /* Since Section - Full width */
     .since-section {
-        max-width: 1440px;
-        margin: 0 auto;
+        max-width: none;
+        width: 100%;
     }
 
     .since-message {
-        max-width: 1096px;
+        max-width: none;
+        width: 100%;
     }
 
-    /* Mockup Section - Limit and center */
+    /* Mockup Section - Full width */
     .mockup-section {
-        max-width: 1440px;
-        margin: 0 auto;
+        max-width: none;
+        width: 100%;
     }
 
-    /* MVV Section - Scale for larger screens */
+    /* MVV Section - Full width */
     .mvv-section {
-        max-width: 1600px;
-        margin: 0 auto;
-        padding-left: 80px;
-        padding-right: 80px;
+        max-width: none;
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .mvv-item {
@@ -951,7 +1009,7 @@ html[lang="es"] .hero-title-koda {
         width: auto;
         max-width: 500px;
         height: auto;
-        left: 200px;
+        right: 60%;
     }
 
     .mvv-description {
@@ -960,17 +1018,19 @@ html[lang="es"] .hero-title-koda {
         right: 0;
     }
 
-    /* Why Section - Scale for larger screens */
+    /* Why Section - Full width */
     .why-koda-section {
         height: auto;
         min-height: 816px;
-        padding: 0 80px;
+        padding: 0 60px;
+        max-width: none;
+        width: 100%;
     }
 
     .why-header {
         position: relative;
         width: 100%;
-        max-width: 800px;
+        max-width: none;
         left: 0;
         top: 0;
         margin-bottom: 120px;
@@ -980,7 +1040,7 @@ html[lang="es"] .hero-title-koda {
     .why-cards {
         position: relative;
         width: 100%;
-        max-width: 100vw;
+        max-width: none;
         height: auto;
         left: 0;
         top: 0;
@@ -992,7 +1052,7 @@ html[lang="es"] .hero-title-koda {
 
     .why-card {
         flex: 1;
-        max-width: 480px;
+        max-width: none;
     }
 
     .why-card-1 {
@@ -1007,15 +1067,16 @@ html[lang="es"] .hero-title-koda {
         min-height: 584px;
     }
 
-    /* Join Section - Limit and center */
+    /* Join Section - Full width */
     .join-section {
-        max-width: 1440px;
-        margin: 0 auto;
+        max-width: none;
+        width: 100%;
     }
 
-    /* Footer - Full width but content centered */
+    /* Footer - Full width */
     .footer-main {
-        max-width: 1440px;
+        max-width: none;
+        width: 100%;
     }
 }
 
@@ -1290,7 +1351,7 @@ html[lang="es"] .hero-title-koda {
     /* Logo */
     .logo img,
     .content-icon {
-        height: 32px;
+        height: 60px;
         width: auto;
     }
 

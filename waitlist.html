@@ -126,5 +126,26 @@
     		</footer>
   	</div>
   	<script src="language-switcher.js"></script>
+  	<script>
+  		// Hide/show nav on scroll
+  		let lastScrollTop = 0;
+  		const nav = document.querySelector('.main-nav');
+
+  		window.addEventListener('scroll', function() {
+  			let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  			if (scrollTop > lastScrollTop && scrollTop > 100) {
+  				// Scrolling down - hide nav
+  				nav.style.transform = 'translateX(-50%) translateY(-100%)';
+  				nav.style.opacity = '0';
+  			} else {
+  				// Scrolling up - show nav
+  				nav.style.transform = 'translateX(-50%) translateY(0)';
+  				nav.style.opacity = '1';
+  			}
+
+  			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  		});
+  	</script>
 </body>
 </html>

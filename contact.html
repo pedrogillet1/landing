@@ -36,7 +36,6 @@
           					<!-- Desktop Navigation -->
           					<div class="nav-links desktop-only">
             						<a href="about.html" data-i18n-key="nav.about">About Koda</a>
-            						<a href="contact.html" class="active" data-i18n-key="nav.contact">Contact</a>
             						<div class="language-switcher">
               							<button id="language-toggle" aria-haspopup="true" aria-expanded="false">
                 								<span id="current-language">🇬🇧 EN</span> ▼
@@ -61,10 +60,9 @@
         				<!-- Mobile Dropdown Menu -->
         				<div class="mobile-menu mobile-only" id="mobile-menu">
           					<div class="mobile-menu-content">
-            						<!-- Top Row: About Koda, Contact, Language -->
+            						<!-- Top Row: About Koda, Language -->
             						<div class="mobile-menu-row">
               							<a href="about.html" class="mobile-menu-link" data-i18n-key="nav.about">About Koda</a>
-              							<a href="contact.html" class="mobile-menu-link active" data-i18n-key="nav.contact">Contact</a>
               							<button class="mobile-menu-link mobile-lang-dropdown" id="mobile-lang-toggle">
                 								Language
                 								<span class="lang-right">
@@ -170,5 +168,26 @@
   	</div>
   	<script src="language-switcher.js?v=20251107"></script>
   	<script src="mobile-menu.js?v=20251107"></script>
+  	<script>
+  		// Hide/show nav on scroll
+  		let lastScrollTop = 0;
+  		const nav = document.querySelector('.main-nav');
+
+  		window.addEventListener('scroll', function() {
+  			let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  			if (scrollTop > lastScrollTop && scrollTop > 100) {
+  				// Scrolling down - hide nav
+  				nav.style.transform = 'translateX(-50%) translateY(-100%)';
+  				nav.style.opacity = '0';
+  			} else {
+  				// Scrolling up - show nav
+  				nav.style.transform = 'translateX(-50%) translateY(0)';
+  				nav.style.opacity = '1';
+  			}
+
+  			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  		});
+  	</script>
 </body>
 </html>

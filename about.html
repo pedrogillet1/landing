@@ -38,7 +38,6 @@
 
           					<!-- Desktop Navigation -->
           					<div class="nav-links desktop-only">
-            						<a href="about.html" class="active" data-i18n-key="nav.about">About Koda</a>
             						<a href="contact.html" data-i18n-key="nav.contact">Contact</a>
             						<div class="language-switcher">
               							<button id="language-toggle" aria-haspopup="true" aria-expanded="false">
@@ -64,9 +63,8 @@
         				<!-- Mobile Dropdown Menu -->
         				<div class="mobile-menu mobile-only" id="mobile-menu">
           					<div class="mobile-menu-content">
-            						<!-- Top Row: About Koda, Contact, Language -->
+            						<!-- Top Row: Contact, Language -->
             						<div class="mobile-menu-row">
-              							<a href="about.html" class="mobile-menu-link active" data-i18n-key="nav.about">About Koda</a>
               							<a href="contact.html" class="mobile-menu-link" data-i18n-key="nav.contact">Contact</a>
               							<button class="mobile-menu-link mobile-lang-dropdown" id="mobile-lang-toggle">
                 								Language
@@ -124,7 +122,6 @@
     		<!-- Mission, Vision, Values Section - Horizontal Layout -->
     		<section class="mvv-section">
       			<div class="mvv-item">
-        				<div class="mvv-number">01</div>
         				<img src="assets/images/koda_cloud.png" alt="Mission" class="mvv-image">
         				<h3 class="mvv-title" data-i18n-key="about.mission_title">Our Mission</h3>
         				<p class="mvv-description" data-i18n-key="about.mission_description">
@@ -133,8 +130,7 @@
       			</div>
 
       			<div class="mvv-item">
-        				<div class="mvv-number">02</div>
-        				<img src="assets/images/koda_vision.png" alt="Vision" class="mvv-image">
+        				<img src="assets/eye_icon.png" alt="Vision" class="mvv-image">
         				<h3 class="mvv-title" data-i18n-key="about.vision_title">Our Vision</h3>
         				<p class="mvv-description" data-i18n-key="about.vision_description">
           					A world where everyone has full control over their personal information, without relying on complex enterprise tools or sacrificing privacy for convenience.
@@ -142,7 +138,6 @@
       			</div>
 
       			<div class="mvv-item">
-        				<div class="mvv-number">03</div>
         				<img src="assets/images/koda_chatbox.png" alt="Values" class="mvv-image">
         				<h3 class="mvv-title" data-i18n-key="about.values_title">Our Values</h3>
         				<p class="mvv-description" data-i18n-key="about.values_description">
@@ -176,7 +171,7 @@
 
     		<!-- Join CTA Section -->
     		<section class="join-section">
-      			<img src="assets/images/koda_values.png" alt="Join Koda" class="join-image">
+      			<img src="assets/images/badge1.png" alt="Join Koda" class="join-image">
       			<div class="join-gradient"></div>
       			<div class="join-content">
         				<h2>
@@ -231,5 +226,26 @@
   	</div>
   	<script src="language-switcher.js"></script>
   	<script src="mobile-menu.js"></script>
+  	<script>
+  		// Hide/show nav on scroll
+  		let lastScrollTop = 0;
+  		const nav = document.querySelector('.main-nav');
+
+  		window.addEventListener('scroll', function() {
+  			let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  			if (scrollTop > lastScrollTop && scrollTop > 100) {
+  				// Scrolling down - hide nav
+  				nav.style.transform = 'translateX(-50%) translateY(-100%)';
+  				nav.style.opacity = '0';
+  			} else {
+  				// Scrolling up - show nav
+  				nav.style.transform = 'translateX(-50%) translateY(0)';
+  				nav.style.opacity = '1';
+  			}
+
+  			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  		});
+  	</script>
 </body>
 </html>

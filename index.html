@@ -29,7 +29,7 @@
         				<nav class="main-nav">
           					<div class="logo">
             						<a href="/">
-              							<img class="content-icon" alt="Koda Logo" src="assets/icons/koda-logo_white.svg">
+              							<img class="content-icon" alt="Koda Logo" src="assets/images/logo copy.svg">
             						</a>
           					</div>
 
@@ -722,10 +722,10 @@
           					<div class="text139">
             						<div class="text9">
               							<span data-i18n-key="cta.your_prefix">Your </span>
-              							<span class="document-chaos" data-i18n-key="cta.title_files">Files</span>
-              							<span data-i18n-key="cta.period_your">. Your </span>
-              							<span class="document-chaos" data-i18n-key="cta.title_ai">AI</span>
-              							<span data-i18n-key="cta.period_your">. Your </span>
+              							<span class="document-chaos" data-i18n-key="cta.title_files">Files</span><span data-i18n-key="cta.period1">.</span><br>
+              							<span data-i18n-key="cta.your_prefix2">Your </span>
+              							<span class="document-chaos" data-i18n-key="cta.title_ai">AI</span><span data-i18n-key="cta.period2">.</span><br>
+              							<span data-i18n-key="cta.your_prefix3">Your </span>
               							<span class="document-chaos" data-i18n-key="cta.title_rules">Rules</span>
             						</div>
             						<div class="text12" data-i18n-key="cta.description">Koda gives you total control over your documents with private AI and encrypted storage — all on your phone.</div>
@@ -782,5 +782,26 @@
 
   	<script src="language-switcher.js"></script>
   	<script src="mobile-menu.js?v=20251020"></script>
+  	<script>
+  		// Hide/show nav on scroll
+  		let lastScrollTop = 0;
+  		const nav = document.querySelector('.main-nav');
+
+  		window.addEventListener('scroll', function() {
+  			let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  			if (scrollTop > lastScrollTop && scrollTop > 100) {
+  				// Scrolling down - hide nav
+  				nav.style.transform = 'translateX(-50%) translateY(-100%)';
+  				nav.style.opacity = '0';
+  			} else {
+  				// Scrolling up - show nav
+  				nav.style.transform = 'translateX(-50%) translateY(0)';
+  				nav.style.opacity = '1';
+  			}
+
+  			lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  		});
+  	</script>
 </body>
 </html>
