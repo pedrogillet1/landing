@@ -711,6 +711,8 @@ body {
         display: none;
         transition: all 0.3s ease;
         z-index: 999;
+        overflow-y: auto;
+        overflow-x: hidden;
     }
 
     .mobile-menu.active {
@@ -751,6 +753,10 @@ body {
         transition: opacity 0.3s ease;
         text-align: center;
         width: 100%;
+    }
+
+    .mobile-menu-link:last-child {
+        border-bottom: none;
     }
 
     .mobile-menu-link:active {
@@ -831,12 +837,13 @@ body {
     }
 
     /* Try Koda Button */
-    .mobile-cta-btn {
+    .mobile-cta-btn,
+    .mobile-menu-content .demo-button {
         display: block;
         width: 100%;
         padding: 18px 20px;
         background: white;
-        color: #131313;
+        color: #131313 !important;
         text-decoration: none;
         text-align: center;
         border-radius: 100px;
@@ -847,7 +854,8 @@ body {
         line-height: 1.5;
     }
 
-    .mobile-cta-btn:active {
+    .mobile-cta-btn:active,
+    .mobile-menu-content .demo-button:active {
         background: #f0f0f0;
         transform: scale(0.98);
     }

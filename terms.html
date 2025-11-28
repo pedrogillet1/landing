@@ -4,7 +4,7 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
 
-  	<link rel="stylesheet" href="./terms.css?v=20251128020" />
+  	<link rel="stylesheet" href="./terms.css?v=20251128034" />
   	<link rel="stylesheet" href="./language-switcher.css" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
 
@@ -32,7 +32,9 @@
               							<img class="content-icon" alt="Koda Logo" src="assets/images/logo copy.svg">
             						</a>
           					</div>
-          					<div class="nav-links">
+
+          					<!-- Desktop Navigation -->
+          					<div class="nav-links desktop-only">
             						<a href="about.html" data-i18n-key="nav.about">About Koda</a>
             						<a href="contact.html" data-i18n-key="nav.contact">Contact</a>
             						<div class="language-switcher">
@@ -47,7 +49,42 @@
             						</div>
             						<a href="https://getkoda.app/" class="demo-button" data-i18n-key="nav.get_started">Get Started</a>
           					</div>
+
+          					<!-- Mobile Menu Toggle Button -->
+          					<button class="mobile-menu-toggle mobile-only" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+            						<span class="menu-line"></span>
+            						<span class="menu-line"></span>
+            						<span class="menu-line"></span>
+          					</button>
         				</nav>
+
+        				<!-- Mobile Dropdown Menu -->
+        				<div class="mobile-menu mobile-only" id="mobile-menu">
+          					<div class="mobile-menu-content">
+            						<!-- Top Row: About Koda, Contact, Language -->
+            						<div class="mobile-menu-row">
+              							<a href="about.html" class="mobile-menu-link" data-i18n-key="nav.about">About Koda</a>
+              							<a href="contact.html" class="mobile-menu-link" data-i18n-key="nav.contact">Contact</a>
+              							<button class="mobile-menu-link mobile-lang-dropdown" id="mobile-lang-toggle">
+                								Language
+                								<span class="lang-right">
+                  									<span id="current-language-mobile" class="lang-flag">🇬🇧</span>
+                  									<span class="lang-arrow">▼</span>
+                								</span>
+              							</button>
+            						</div>
+
+            						<!-- Language Options (Hidden by default) -->
+            						<div class="mobile-language-options" id="mobile-lang-options">
+              							<button class="mobile-lang-btn active" data-lang="en">🇬🇧 English</button>
+              							<button class="mobile-lang-btn" data-lang="pt">🇧🇷 Português</button>
+              							<button class="mobile-lang-btn" data-lang="es">🇪🇸 Español</button>
+            						</div>
+
+            						<!-- Try Koda Button -->
+            						<a href="https://getkoda.app/" class="demo-button" data-i18n-key="nav.get_started">Try Koda</a>
+          					</div>
+        				</div>
       			</header>
 
       			<!-- Terms Header -->
@@ -165,7 +202,8 @@
       			</a>
     		</footer>
   	</div>
-  	<script src="language-switcher.js"></script>
+  	<script src="language-switcher.js?v=20251128"></script>
+  	<script src="mobile-menu.js?v=20251128"></script>
   	<script>
   		// Hide/show nav on scroll
   		let lastScrollTop = 0;

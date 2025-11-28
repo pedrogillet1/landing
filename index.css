@@ -3247,13 +3247,14 @@ html, body {
         font-weight: 600;
     }
 
-    /* Try Koda Button - getkoda.io style */
-    .mobile-cta-btn {
+    /* Try Koda Button */
+    .mobile-cta-btn,
+    .mobile-menu-content .demo-button {
         display: block;
         width: 100%;
         padding: 18px 20px;
         background: white;
-        color: #131313;
+        color: #131313 !important;
         text-decoration: none;
         text-align: center;
         border-radius: 100px;
@@ -3264,7 +3265,8 @@ html, body {
         line-height: 1.5;
     }
 
-    .mobile-cta-btn:active {
+    .mobile-cta-btn:active,
+    .mobile-menu-content .demo-button:active {
         background: #f0f0f0;
         transform: scale(0.98);
     }
