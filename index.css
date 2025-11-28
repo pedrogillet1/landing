@@ -151,6 +151,15 @@ html, body {
     height: 582px;
 }
 
+/* Desktop/Mobile Toggle - Base Styles */
+.desktop-only {
+    display: flex;
+}
+
+.mobile-only {
+    display: none !important;
+}
+
 .main-nav {
     position: fixed;
     top: 20px;
@@ -221,7 +230,9 @@ html, body {
     background-color: transparent;
 }
 
-.nav-links .demo-button {
+.nav-links .demo-button,
+.nav-links a.demo-button,
+a.demo-button {
     background-color: #ffffff;
     color: #000000 !important;
     padding: 12px 24px;
@@ -3070,10 +3081,10 @@ html, body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 5px;
-        width: 40px;
-        height: 40px;
-        padding: 8px;
+        gap: 6px;
+        width: 44px;
+        height: 44px;
+        padding: 10px;
         background: transparent;
         border: none;
         cursor: pointer;
@@ -3084,16 +3095,17 @@ html, body {
     }
 
     .mobile-menu-toggle .menu-line {
-        display: block;
-        width: 22px;
-        height: 2px;
+        display: block !important;
+        width: 24px;
+        height: 3px;
         background: white;
         transition: all 0.3s ease;
         border-radius: 2px;
+        flex-shrink: 0;
     }
 
     .mobile-menu-toggle.active .menu-line:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
+        transform: translateY(9px) rotate(45deg);
     }
 
     .mobile-menu-toggle.active .menu-line:nth-child(2) {
@@ -3101,7 +3113,7 @@ html, body {
     }
 
     .mobile-menu-toggle.active .menu-line:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     .mobile-menu-toggle .menu-icon,
@@ -3133,11 +3145,14 @@ html, body {
     }
 
     .mobile-menu-content {
-        padding: 24px 20px 40px 20px;
+        padding: 0 20px 40px 20px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0;
         min-height: calc(100vh - 76px);
+        position: relative;
     }
 
     /* Menu Items */
@@ -3145,20 +3160,23 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        justify-content: center;
+        gap: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        flex: 1;
+        width: 100%;
     }
 
     .mobile-menu-link {
         color: white;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 36px;
         font-weight: 500;
         background: transparent;
         border: none;
-        padding: 24px 0;
+        padding: 20px 0;
         cursor: pointer;
         font-family: 'Plus Jakarta Sans', sans-serif;
         transition: opacity 0.3s ease;
@@ -3181,22 +3199,28 @@ html, body {
         gap: 12px;
         width: 100%;
         text-align: center;
-        padding: 24px 0 !important;
-        font-size: 28px;
+        padding: 20px 0 10px 0 !important;
+        font-size: 36px !important;
+        font-weight: 500 !important;
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        color: white !important;
     }
 
     .mobile-lang-dropdown .lang-right {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
     }
 
-    .mobile-lang-dropdown .lang-flag {
-        font-size: 16px;
+    .mobile-flag-icon {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        vertical-align: middle;
     }
 
     .mobile-lang-dropdown .lang-arrow {
-        font-size: 12px;
+        font-size: 20px;
         opacity: 0.6;
         transition: transform 0.3s ease;
     }
@@ -3213,11 +3237,11 @@ html, body {
     .mobile-language-options {
         display: none;
         flex-direction: column;
+        align-items: center;
         gap: 0;
         padding: 0;
-        margin-top: 8px;
-        padding-left: 16px;
-        border-left: 2px solid rgba(255, 255, 255, 0.1);
+        margin-top: 0;
+        width: 100%;
     }
 
     .mobile-language-options.show {
@@ -3225,16 +3249,26 @@ html, body {
     }
 
     .mobile-lang-btn {
-        padding: 12px 16px;
+        padding: 10px 20px;
         background: transparent;
         color: rgba(255, 255, 255, 0.8);
         border: none;
-        font-size: 16px;
+        font-size: 28px !important;
         font-weight: 500;
         cursor: pointer;
         transition: all 0.3s ease;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        text-align: left;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .mobile-lang-btn .mobile-flag-icon {
+        width: 24px;
+        height: 24px;
     }
 
     .mobile-lang-btn:active {
@@ -3247,7 +3281,7 @@ html, body {
         font-weight: 600;
     }
 
-    /* Try Koda Button */
+    /* Try Koda Button - positioned at bottom */
     .mobile-cta-btn,
     .mobile-menu-content .demo-button {
         display: block;
@@ -3261,7 +3295,8 @@ html, body {
         font-size: 18px;
         font-weight: 600;
         transition: all 0.3s ease;
-        margin-top: 24px;
+        margin-top: auto;
+        margin-bottom: 40px;
         line-height: 1.5;
     }
 
@@ -3806,6 +3841,14 @@ html, body {
 
     /* Show mobile-only elements */
     .mobile-only {
+        display: flex !important;
+    }
+
+    .mobile-menu.mobile-only {
+        display: none !important;
+    }
+
+    .mobile-menu.mobile-only.active {
         display: block !important;
     }
 

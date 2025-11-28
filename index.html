@@ -16,7 +16,7 @@
   	<!-- Android -->
   	<meta name="mobile-web-app-capable" content="yes">
 
-  	<link rel="stylesheet"  href="./index.css?v=20251128033" />
+  	<link rel="stylesheet"  href="./index.css?v=20251128043" />
   	<link rel="stylesheet" href="./language-switcher.css?v=20251128" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" />
 
@@ -35,6 +35,7 @@
 
           					<!-- Desktop Navigation -->
           					<div class="nav-links desktop-only">
+            						<a href="index.html" data-i18n-key="nav.home">Home</a>
             						<a href="about.html" data-i18n-key="nav.about">About Koda</a>
             						<a href="contact.html" data-i18n-key="nav.contact">Contact</a>
             						<div class="language-switcher">
@@ -61,24 +62,24 @@
         				<!-- Mobile Dropdown Menu -->
         				<div class="mobile-menu mobile-only" id="mobile-menu">
           					<div class="mobile-menu-content">
-            						<!-- Top Row: About Koda, Contact, Language -->
+            						<!-- Top Row: Home, About Koda, Contact, Language -->
             						<div class="mobile-menu-row">
+              							<a href="index.html" class="mobile-menu-link" data-i18n-key="nav.home">Home</a>
               							<a href="about.html" class="mobile-menu-link" data-i18n-key="nav.about">About Koda</a>
               							<a href="contact.html" class="mobile-menu-link" data-i18n-key="nav.contact">Contact</a>
               							<button class="mobile-menu-link mobile-lang-dropdown" id="mobile-lang-toggle">
                 								Language
                 								<span class="lang-right">
-                  									<span id="current-language-mobile" class="lang-flag">🇬🇧</span>
+                  									<img id="current-language-mobile-flag" src="assets/icons/flag-us.svg" alt="EN" class="mobile-flag-icon">
                   									<span class="lang-arrow">▼</span>
                 								</span>
               							</button>
-            						</div>
-
-            						<!-- Language Options (Hidden by default) -->
-            						<div class="mobile-language-options" id="mobile-lang-options">
-              							<button class="mobile-lang-btn active" data-lang="en">🇬🇧 English</button>
-              							<button class="mobile-lang-btn" data-lang="pt">🇧🇷 Português</button>
-              							<button class="mobile-lang-btn" data-lang="es">🇪🇸 Español</button>
+              							<!-- Language Options (Hidden by default) -->
+              							<div class="mobile-language-options" id="mobile-lang-options">
+                								<button class="mobile-lang-btn active" data-lang="en"><img src="assets/icons/flag-us.svg" alt="EN" class="mobile-flag-icon"> English</button>
+                								<button class="mobile-lang-btn" data-lang="pt"><img src="assets/icons/flag-br.svg" alt="PT" class="mobile-flag-icon"> Português</button>
+                								<button class="mobile-lang-btn" data-lang="es"><img src="assets/icons/flag-es.svg" alt="ES" class="mobile-flag-icon"> Español</button>
+              							</div>
             						</div>
 
             						<!-- Try Koda Button -->
@@ -781,7 +782,7 @@
 
 
   	<script src="language-switcher.js?v=20251128"></script>
-  	<script src="mobile-menu.js?v=20251128"></script>
+  	<script src="mobile-menu.js?v=20251128b"></script>
   	<script>
   		// Hide/show nav on scroll
   		let lastScrollTop = 0;

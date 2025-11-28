@@ -1214,11 +1214,14 @@ html[lang="es"] .hero-title-koda {
     }
 
     .mobile-menu-content {
-        padding: 24px 20px 40px 20px;
+        padding: 0 20px 40px 20px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 0;
         min-height: calc(100vh - 76px);
+        position: relative;
     }
 
     /* Menu Items */
@@ -1226,20 +1229,23 @@ html[lang="es"] .hero-title-koda {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 8px;
-        margin-bottom: 40px;
-        padding-bottom: 40px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        justify-content: center;
+        gap: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        flex: 1;
+        width: 100%;
     }
 
     .mobile-menu-link {
         color: white;
         text-decoration: none;
-        font-size: 28px;
+        font-size: 36px;
         font-weight: 500;
         background: transparent;
         border: none;
-        padding: 24px 0;
+        padding: 20px 0;
         cursor: pointer;
         font-family: 'Plus Jakarta Sans', sans-serif;
         transition: opacity 0.3s ease;
@@ -1262,22 +1268,28 @@ html[lang="es"] .hero-title-koda {
         gap: 12px;
         width: 100%;
         text-align: center;
-        padding: 24px 0 !important;
-        font-size: 28px;
+        padding: 20px 0 10px 0 !important;
+        font-size: 36px !important;
+        font-weight: 500 !important;
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        color: white !important;
     }
 
     .mobile-lang-dropdown .lang-right {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
     }
 
-    .mobile-lang-dropdown .lang-flag {
-        font-size: 16px;
+    .mobile-flag-icon {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        vertical-align: middle;
     }
 
     .mobile-lang-dropdown .lang-arrow {
-        font-size: 12px;
+        font-size: 20px;
         opacity: 0.6;
         transition: transform 0.3s ease;
     }
@@ -1294,11 +1306,11 @@ html[lang="es"] .hero-title-koda {
     .mobile-language-options {
         display: none;
         flex-direction: column;
+        align-items: center;
         gap: 0;
         padding: 0;
-        margin-top: 8px;
-        padding-left: 16px;
-        border-left: 2px solid rgba(255, 255, 255, 0.1);
+        margin-top: 0;
+        width: 100%;
     }
 
     .mobile-language-options.show {
@@ -1306,16 +1318,26 @@ html[lang="es"] .hero-title-koda {
     }
 
     .mobile-lang-btn {
-        padding: 12px 16px;
+        padding: 10px 20px;
         background: transparent;
         color: rgba(255, 255, 255, 0.8);
         border: none;
-        font-size: 16px;
+        font-size: 28px !important;
         font-weight: 500;
         cursor: pointer;
         transition: all 0.3s ease;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        text-align: left;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .mobile-lang-btn .mobile-flag-icon {
+        width: 24px;
+        height: 24px;
     }
 
     .mobile-lang-btn:active {
@@ -1328,7 +1350,7 @@ html[lang="es"] .hero-title-koda {
         font-weight: 600;
     }
 
-    /* Try Koda Button */
+    /* Try Koda Button - positioned at bottom */
     .mobile-cta-btn,
     .mobile-menu-content .demo-button {
         display: block;
@@ -1342,7 +1364,8 @@ html[lang="es"] .hero-title-koda {
         font-size: 18px;
         font-weight: 600;
         transition: all 0.3s ease;
-        margin-top: 24px;
+        margin-top: auto;
+        margin-bottom: 40px;
         line-height: 1.5;
     }
 

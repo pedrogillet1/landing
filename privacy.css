@@ -106,6 +106,15 @@ body {
     transform-origin: top left;
 }
 
+/* Desktop/Mobile Toggle - Base Styles */
+.desktop-only {
+    display: flex;
+}
+
+.mobile-only {
+    display: none !important;
+}
+
 /* Navigation */
 .main-nav {
     position: fixed;

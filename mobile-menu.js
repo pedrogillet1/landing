@@ -52,7 +52,7 @@
         // Language switcher functionality in mobile menu
         const langButtons = document.querySelectorAll('.mobile-lang-btn');
         const currentLangSpan = document.getElementById('current-language');
-        const currentLangMobile = document.getElementById('current-language-mobile');
+        const currentLangMobileFlag = document.getElementById('current-language-mobile-flag');
 
         langButtons.forEach(function(btn) {
             btn.addEventListener('click', function(e) {
@@ -65,24 +65,16 @@
                 });
                 this.classList.add('active');
 
-                const langMap = {
-                    'en': '🇬🇧 EN',
-                    'pt': '🇧🇷 PT',
-                    'es': '🇪🇸 ES'
+                const flagSrcMap = {
+                    'en': 'assets/icons/flag-us.svg',
+                    'pt': 'assets/icons/flag-br.svg',
+                    'es': 'assets/icons/flag-es.svg'
                 };
 
-                const flagMap = {
-                    'en': '🇬🇧',
-                    'pt': '🇧🇷',
-                    'es': '🇪🇸'
-                };
-
-                // Update current language display
-                if (currentLangSpan) {
-                    currentLangSpan.textContent = langMap[lang] || '🇬🇧 EN';
-                }
-                if (currentLangMobile) {
-                    currentLangMobile.textContent = flagMap[lang] || '🇬🇧';
+                // Update current language display (mobile flag image)
+                if (currentLangMobileFlag) {
+                    currentLangMobileFlag.src = flagSrcMap[lang] || 'assets/icons/flag-us.svg';
+                    currentLangMobileFlag.alt = lang.toUpperCase();
                 }
 
                 // Hide language options
